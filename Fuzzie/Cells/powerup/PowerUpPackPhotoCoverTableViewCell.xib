@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="313" id="KGk-i7-Jjw" customClass="PowerUpPackPhotoCoverTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="239.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brand-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="9gP-ho-L0B">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-soldout-cover" translatesAutoresizingMaskIntoConstraints="NO" id="TTg-0z-sDE">
+                        <rect key="frame" x="111" y="92" width="98" height="56"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="56" id="PSp-QM-jqx"/>
+                            <constraint firstAttribute="width" constant="98" id="Vuj-2l-Bz2"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="9gP-ho-L0B" secondAttribute="trailing" id="Jm3-ix-waT"/>
+                    <constraint firstItem="9gP-ho-L0B" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="UUl-9g-WJv"/>
+                    <constraint firstItem="TTg-0z-sDE" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="dwQ-Oi-6eB"/>
+                    <constraint firstAttribute="bottom" secondItem="9gP-ho-L0B" secondAttribute="bottom" id="kYG-YI-4R7"/>
+                    <constraint firstItem="TTg-0z-sDE" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="phu-et-MN4"/>
+                    <constraint firstItem="9gP-ho-L0B" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="q1V-5l-UXS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="bgImageView" destination="9gP-ho-L0B" id="v57-fD-8aD"/>
+                <outlet property="imageView" destination="9gP-ho-L0B" id="cpl-aT-uVX"/>
+                <outlet property="ivSoldOut" destination="TTg-0z-sDE" id="tJC-QC-REZ"/>
+            </connections>
+            <point key="canvasLocation" x="75" y="186.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="brand-placeholder" width="640" height="480"/>
+        <image name="icon-soldout-cover" width="200" height="116"/>
+    </resources>
+</document>

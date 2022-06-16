@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Brandon_bold.otf">
+            <string>BrandonGrotesque-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TopBrandCell" id="r5A-h3-psl" customClass="TopBrandCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="175" height="152"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="175" height="152"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Is-rr-trM">
+                        <rect key="frame" x="0.0" y="0.0" width="175" height="135"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="135" id="eqP-JL-lS7"/>
+                        </constraints>
+                    </imageView>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NAo-RA-6xV">
+                        <rect key="frame" x="39" y="122" width="96.5" height="26"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ukI-kN-N1F" userLabel="Cashback" customClass="TKRoundedView">
+                                <rect key="frame" x="0.0" y="0.0" width="48.5" height="26"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cashback-icon" translatesAutoresizingMaskIntoConstraints="NO" id="rcy-oe-pf2">
+                                        <rect key="frame" x="4" y="7" width="14" height="13"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jea-r5-Zgo">
+                                        <rect key="frame" x="21" y="4" width="23.5" height="19"/>
+                                        <fontDescription key="fontDescription" name="BrandonGrotesque-Bold" family="Brandon Grotesque" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.23137254900000001" green="0.57647058819999997" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="rcy-oe-pf2" firstAttribute="centerY" secondItem="ukI-kN-N1F" secondAttribute="centerY" id="0T1-uz-MSB"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jea-r5-Zgo" secondAttribute="trailing" priority="750" constant="4" id="162-WF-FcS"/>
+                                    <constraint firstItem="rcy-oe-pf2" firstAttribute="leading" secondItem="ukI-kN-N1F" secondAttribute="leading" priority="750" constant="4" id="Btk-6U-hyb"/>
+                                    <constraint firstItem="Jea-r5-Zgo" firstAttribute="leading" secondItem="rcy-oe-pf2" secondAttribute="trailing" priority="250" constant="3" id="JXU-GX-XJd"/>
+                                    <constraint firstItem="Jea-r5-Zgo" firstAttribute="centerY" secondItem="ukI-kN-N1F" secondAttribute="centerY" id="TRS-Ci-b4h"/>
+                                    <constraint firstAttribute="width" priority="200" id="WTy-Qa-urU"/>
+                                    <constraint firstAttribute="height" constant="26" id="XhG-yT-bKC"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eh7-NV-Aoq" userLabel="Powerup" customClass="TKRoundedView">
+                                <rect key="frame" x="48.5" y="0.0" width="48" height="26"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lightning-icon" translatesAutoresizingMaskIntoConstraints="NO" id="0p0-Fc-Chz">
+                                        <rect key="frame" x="3.5" y="7" width="8" height="13"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+99%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4m-RY-Ywd">
+                                        <rect key="frame" x="14" y="4" width="30" height="19"/>
+                                        <fontDescription key="fontDescription" name="BrandonGrotesque-Bold" family="Brandon Grotesque" pointSize="13"/>
+                                        <color key="textColor" red="0.28259840609999998" green="0.64684361219999997" blue="0.88394266369999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="d4m-RY-Ywd" secondAttribute="trailing" priority="750" constant="4" id="0zP-O4-N7d"/>
+                                    <constraint firstAttribute="height" constant="26" id="5ch-gT-p6L"/>
+                                    <constraint firstItem="0p0-Fc-Chz" firstAttribute="leading" secondItem="Eh7-NV-Aoq" secondAttribute="leading" priority="750" constant="4" id="gkH-Uv-NGZ"/>
+                                    <constraint firstItem="0p0-Fc-Chz" firstAttribute="centerY" secondItem="Eh7-NV-Aoq" secondAttribute="centerY" id="gsn-Ag-aGQ"/>
+                                    <constraint firstItem="d4m-RY-Ywd" firstAttribute="leading" secondItem="0p0-Fc-Chz" secondAttribute="trailing" priority="250" constant="2" id="jhS-o1-Qls"/>
+                                    <constraint firstItem="d4m-RY-Ywd" firstAttribute="centerY" secondItem="Eh7-NV-Aoq" secondAttribute="centerY" id="nMU-4h-vdv"/>
+                                    <constraint firstAttribute="width" priority="200" id="oaG-Ur-Y8W"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ukI-kN-N1F" secondAttribute="bottom" id="2rV-2Q-UPY"/>
+                            <constraint firstItem="Eh7-NV-Aoq" firstAttribute="leading" secondItem="ukI-kN-N1F" secondAttribute="trailing" id="AQF-Wt-T3t"/>
+                            <constraint firstAttribute="bottom" secondItem="Eh7-NV-Aoq" secondAttribute="bottom" id="BTq-te-BfA"/>
+                            <constraint firstAttribute="trailing" secondItem="Eh7-NV-Aoq" secondAttribute="trailing" id="MbN-Py-qGn"/>
+                            <constraint firstItem="Eh7-NV-Aoq" firstAttribute="top" secondItem="NAo-RA-6xV" secondAttribute="top" id="a0k-BO-2NS"/>
+                            <constraint firstItem="ukI-kN-N1F" firstAttribute="top" secondItem="NAo-RA-6xV" secondAttribute="top" id="jUF-k9-dBD"/>
+                            <constraint firstItem="ukI-kN-N1F" firstAttribute="leading" secondItem="NAo-RA-6xV" secondAttribute="leading" id="mnU-Th-opw"/>
+                            <constraint firstAttribute="height" constant="26" id="nc7-MT-ZQr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="4Is-rr-trM" firstAttribute="top" secondItem="r5A-h3-psl" secondAttribute="top" id="4hV-3I-6Dx"/>
+                <constraint firstItem="4Is-rr-trM" firstAttribute="leading" secondItem="r5A-h3-psl" secondAttribute="leading" id="d3z-HS-kqY"/>
+                <constraint firstItem="NAo-RA-6xV" firstAttribute="bottom" secondItem="4Is-rr-trM" secondAttribute="bottom" constant="13" id="gER-dH-ERe"/>
+                <constraint firstAttribute="trailing" secondItem="4Is-rr-trM" secondAttribute="trailing" id="jnW-gL-lY4"/>
+                <constraint firstItem="NAo-RA-6xV" firstAttribute="centerX" secondItem="r5A-h3-psl" secondAttribute="centerX" id="x98-wt-Keg"/>
+            </constraints>
+            <size key="customSize" width="175" height="161"/>
+            <connections>
+                <outlet property="brandImage" destination="4Is-rr-trM" id="NNA-mo-9fK"/>
+                <outlet property="cashContainerWidthConstraint" destination="WTy-Qa-urU" id="NQw-OX-5Bu"/>
+                <outlet property="cashbackContainerView" destination="ukI-kN-N1F" id="zNW-UE-ZSE"/>
+                <outlet property="cashbackLabel" destination="Jea-r5-Zgo" id="cFE-xd-MMu"/>
+                <outlet property="ivPowerUp" destination="0p0-Fc-Chz" id="6b6-Gy-rM8"/>
+                <outlet property="powerUpContainer" destination="Eh7-NV-Aoq" id="JcN-r1-a49"/>
+                <outlet property="powerUpLabel" destination="d4m-RY-Ywd" id="0oD-ek-rdN"/>
+                <outlet property="powerupContainerWidthConstraint" destination="oaG-Ur-Y8W" id="M2L-UB-qyD"/>
+            </connections>
+            <point key="canvasLocation" x="93.5" y="-24"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="cashback-icon" width="14" height="13"/>
+        <image name="lightning-icon" width="8" height="13"/>
+    </resources>
+</document>

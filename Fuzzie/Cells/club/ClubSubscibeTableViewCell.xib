@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Brandon_blk.otf">
+            <string>BrandonGrotesque-Black</string>
+        </array>
+        <array key="Lato-Black.ttf">
+            <string>Lato-Black</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="131" id="KGk-i7-Jjw" customClass="ClubSubscibeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="169.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image-club-join" translatesAutoresizingMaskIntoConstraints="NO" id="56J-9h-4uL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="169.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join the Fuzzie Club" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWe-d1-vSc">
+                        <rect key="frame" x="15" y="32" width="198" height="27.5"/>
+                        <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="22"/>
+                        <color key="textColor" red="1" green="0.99997999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="displayP3"/>
+                        <size key="shadowOffset" width="0.0" height="1"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get access to all deals now and start saving big!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0R-uS-Jki">
+                        <rect key="frame" x="15" y="67.5" width="290" height="35"/>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                        <color key="textColor" red="1" green="0.99997999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="displayP3"/>
+                        <size key="shadowOffset" width="0.0" height="1"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JOIN NOW" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9N-wu-ZTO">
+                        <rect key="frame" x="15" y="118.5" width="85" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="85" id="KmF-aK-9VT"/>
+                            <constraint firstAttribute="height" constant="26" id="QR5-oI-eLM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="BrandonGrotesque-Black" family="Brandon Grotesque" pointSize="12"/>
+                        <color key="textColor" red="1" green="0.99997999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="56J-9h-4uL" secondAttribute="trailing" id="Egn-WP-oyc"/>
+                    <constraint firstItem="n0R-uS-Jki" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="FxE-lh-IKu"/>
+                    <constraint firstItem="I9N-wu-ZTO" firstAttribute="top" secondItem="n0R-uS-Jki" secondAttribute="bottom" constant="16" id="QdE-hG-TN4"/>
+                    <constraint firstAttribute="trailing" secondItem="n0R-uS-Jki" secondAttribute="trailing" constant="15" id="Qps-fh-vg2"/>
+                    <constraint firstItem="I9N-wu-ZTO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="VvX-My-fPI"/>
+                    <constraint firstItem="n0R-uS-Jki" firstAttribute="top" secondItem="aWe-d1-vSc" secondAttribute="bottom" constant="8" id="XtM-EF-6bl"/>
+                    <constraint firstAttribute="bottom" secondItem="56J-9h-4uL" secondAttribute="bottom" id="a3n-cM-1AK"/>
+                    <constraint firstItem="n0R-uS-Jki" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="bzf-IM-Pkp"/>
+                    <constraint firstItem="56J-9h-4uL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cVb-8X-Pi5"/>
+                    <constraint firstItem="56J-9h-4uL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="qaz-Nc-NU9"/>
+                    <constraint firstItem="aWe-d1-vSc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="tWu-m1-3J9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="lbJoin" destination="I9N-wu-ZTO" id="bQd-ae-FPb"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="95"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="image-club-join" width="320" height="170"/>
+    </resources>
+</document>

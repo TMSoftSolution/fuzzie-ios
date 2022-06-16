@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BrandValidOptionCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="70"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wdn-l8-Wwp">
+                        <rect key="frame" x="0.0" y="20.5" width="250" height="30"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-info" translatesAutoresizingMaskIntoConstraints="NO" id="g9T-N5-4Wk">
+                                <rect key="frame" x="15" y="11.5" width="10" height="7.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="7.5" id="JNd-mi-sKa"/>
+                                    <constraint firstAttribute="width" constant="10" id="hLe-B1-hFk"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valid with in store promotions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wyl-yc-GJV">
+                                <rect key="frame" x="33" y="8.5" width="134.5" height="12"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="10"/>
+                                <color key="textColor" red="0.25881999999999999" green="0.25881999999999999" blue="0.25881999999999999" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="g9T-N5-4Wk" firstAttribute="centerY" secondItem="Wdn-l8-Wwp" secondAttribute="centerY" id="COd-zF-4pT"/>
+                            <constraint firstItem="Wyl-yc-GJV" firstAttribute="leading" secondItem="g9T-N5-4Wk" secondAttribute="trailing" constant="8" id="Dns-Q6-ZAb"/>
+                            <constraint firstItem="Wyl-yc-GJV" firstAttribute="centerY" secondItem="Wdn-l8-Wwp" secondAttribute="centerY" id="IRJ-Jr-cMv"/>
+                            <constraint firstItem="g9T-N5-4Wk" firstAttribute="leading" secondItem="Wdn-l8-Wwp" secondAttribute="leading" constant="15" id="Zax-4F-N3o"/>
+                            <constraint firstAttribute="height" constant="30" id="hOF-Qu-A40"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Wdn-l8-Wwp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="fTj-9O-iSk"/>
+                <constraint firstAttribute="trailing" secondItem="Wdn-l8-Wwp" secondAttribute="trailing" id="pdR-s9-ocZ"/>
+                <constraint firstItem="Wdn-l8-Wwp" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="wa2-Z8-QWj"/>
+            </constraints>
+            <size key="customSize" width="250" height="70"/>
+            <connections>
+                <outlet property="containerView" destination="Wdn-l8-Wwp" id="mBj-FT-1wL"/>
+                <outlet property="lbOption" destination="Wyl-yc-GJV" id="qg8-Bh-UMu"/>
+            </connections>
+            <point key="canvasLocation" x="154" y="70"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon-info" width="24" height="16"/>
+    </resources>
+</document>

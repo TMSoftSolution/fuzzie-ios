@@ -1,0 +1,21 @@
+//
+//  Fuzzie.pch
+//  Fuzzie
+//
+//  Created by Nur Iman Izam Othman on 17/11/16.
+//  Copyright © 2016 Nur Iman Izam. All rights reserved.
+//
+
+#ifndef Fuzzie_pch
+#define Fuzzie_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "GlobalConstants.h"
+#import "CommonUtilities.h"
+#import "NetsUtils.h"
+#import "FZData.h"
+#import "AppDelegate.h"
+
+#endif /* Fuzzie_pch */

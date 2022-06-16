@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Black.ttf">
+            <string>Lato-Black</string>
+        </array>
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="EarnCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="EarnCell" rowHeight="208" id="Gj9-wy-3QA" customClass="EarnTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="198"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gj9-wy-3QA" id="158-Pq-ZjB">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="197.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0MK-u9-1kO" userLabel="Container">
+                        <rect key="frame" x="15" y="15" width="345" height="120"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PdB-S3-lZA" userLabel="Cashback View" customClass="TKRoundedView">
+                                <rect key="frame" x="0.0" y="0.0" width="345" height="60"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cashback-icon-big" translatesAutoresizingMaskIntoConstraints="NO" id="29c-hS-pIq">
+                                        <rect key="frame" x="15" y="15" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="EE7-U3-cwa"/>
+                                            <constraint firstAttribute="width" constant="30" id="Gar-T1-Cgs"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S$18" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yw0-DF-0sl">
+                                        <rect key="frame" x="298" y="22" width="32" height="17"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="14"/>
+                                        <color key="textColor" red="0.23137254901960785" green="0.57647058823529407" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8% Instant Cashback" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDd-BI-PO4">
+                                        <rect key="frame" x="53" y="22" width="130" height="17"/>
+                                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
+                                        <color key="textColor" red="0.35686274509803922" green="0.35686274509803922" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="29c-hS-pIq" firstAttribute="centerY" secondItem="PdB-S3-lZA" secondAttribute="centerY" id="1sU-uo-bj5"/>
+                                    <constraint firstItem="yw0-DF-0sl" firstAttribute="centerY" secondItem="PdB-S3-lZA" secondAttribute="centerY" id="G9g-oo-5zV"/>
+                                    <constraint firstItem="SDd-BI-PO4" firstAttribute="leading" secondItem="29c-hS-pIq" secondAttribute="trailing" constant="8" id="HM2-bG-b0J"/>
+                                    <constraint firstItem="29c-hS-pIq" firstAttribute="leading" secondItem="PdB-S3-lZA" secondAttribute="leading" constant="15" id="PTm-IT-i4c"/>
+                                    <constraint firstAttribute="height" constant="60" id="Zqr-uZ-Xtd"/>
+                                    <constraint firstItem="SDd-BI-PO4" firstAttribute="centerY" secondItem="29c-hS-pIq" secondAttribute="centerY" id="cjN-wC-m1h"/>
+                                    <constraint firstAttribute="trailing" secondItem="yw0-DF-0sl" secondAttribute="trailing" constant="15" id="eJf-zF-0lP"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="War-HY-EtI" userLabel="Power Up Container" customClass="TKRoundedView">
+                                <rect key="frame" x="0.0" y="60" width="345" height="60"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lightning-icon-big" translatesAutoresizingMaskIntoConstraints="NO" id="tJ9-Oi-4AE">
+                                        <rect key="frame" x="15" y="15" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="WgC-jT-ECn"/>
+                                            <constraint firstAttribute="height" constant="30" id="vyu-se-UrX"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="OBw-kF-FlS">
+                                        <rect key="frame" x="53" y="14" width="127" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get +2% Cashback" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNF-6T-7HK">
+                                                <rect key="frame" x="0.0" y="0.0" width="127" height="14.5"/>
+                                                <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="12"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="with the Power Up Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H37-o3-Ii8">
+                                                <rect key="frame" x="0.0" y="16.5" width="127" height="14.5"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white-right-arrow" translatesAutoresizingMaskIntoConstraints="NO" id="4LK-b9-RhZ">
+                                        <rect key="frame" x="323" y="24" width="7" height="12"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="7" id="8Q2-Zx-GZJ"/>
+                                            <constraint firstAttribute="height" constant="12" id="m1C-YJ-e8O"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.23137254901960785" green="0.57647058823529407" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="OBw-kF-FlS" firstAttribute="centerY" secondItem="tJ9-Oi-4AE" secondAttribute="centerY" id="4F0-7W-aDt"/>
+                                    <constraint firstItem="OBw-kF-FlS" firstAttribute="leading" secondItem="tJ9-Oi-4AE" secondAttribute="trailing" constant="8" id="Ban-P4-7KU"/>
+                                    <constraint firstItem="tJ9-Oi-4AE" firstAttribute="centerY" secondItem="War-HY-EtI" secondAttribute="centerY" id="Diq-6x-Lmj"/>
+                                    <constraint firstItem="tJ9-Oi-4AE" firstAttribute="leading" secondItem="War-HY-EtI" secondAttribute="leading" constant="15" id="PHu-4L-iz2"/>
+                                    <constraint firstItem="4LK-b9-RhZ" firstAttribute="centerY" secondItem="War-HY-EtI" secondAttribute="centerY" id="XjP-z0-2Hr"/>
+                                    <constraint firstAttribute="height" constant="60" id="Z9f-o6-5y6"/>
+                                    <constraint firstAttribute="trailing" secondItem="4LK-b9-RhZ" secondAttribute="trailing" constant="15" id="pWk-8p-cAc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PdB-S3-lZA" firstAttribute="leading" secondItem="0MK-u9-1kO" secondAttribute="leading" id="Abf-CI-ucl"/>
+                            <constraint firstItem="PdB-S3-lZA" firstAttribute="top" secondItem="0MK-u9-1kO" secondAttribute="top" id="Igc-2C-07W"/>
+                            <constraint firstAttribute="bottom" secondItem="War-HY-EtI" secondAttribute="bottom" id="KeJ-Qs-xJZ"/>
+                            <constraint firstAttribute="trailing" secondItem="War-HY-EtI" secondAttribute="trailing" id="R5B-qq-Cp9"/>
+                            <constraint firstItem="War-HY-EtI" firstAttribute="leading" secondItem="0MK-u9-1kO" secondAttribute="leading" id="Stp-SN-NeS"/>
+                            <constraint firstAttribute="trailing" secondItem="PdB-S3-lZA" secondAttribute="trailing" id="U8S-cg-Z4m"/>
+                            <constraint firstItem="War-HY-EtI" firstAttribute="top" secondItem="PdB-S3-lZA" secondAttribute="bottom" id="kPX-8D-4tx"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn more about your rewards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8k-0n-VNH" customClass="MDHTMLLabel">
+                        <rect key="frame" x="15" y="160" width="345" height="14.5"/>
+                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="12"/>
+                        <color key="textColor" red="0.63921568627450975" green="0.63921568627450975" blue="0.63921568627450975" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0MK-u9-1kO" firstAttribute="top" secondItem="158-Pq-ZjB" secondAttribute="top" constant="15" id="0A0-2x-PKo"/>
+                    <constraint firstAttribute="bottom" secondItem="k8k-0n-VNH" secondAttribute="bottom" constant="23" id="OeR-kw-htR"/>
+                    <constraint firstItem="k8k-0n-VNH" firstAttribute="top" secondItem="0MK-u9-1kO" secondAttribute="bottom" constant="25" id="RXd-hs-Kvn"/>
+                    <constraint firstAttribute="trailing" secondItem="0MK-u9-1kO" secondAttribute="trailing" constant="15" id="Wni-0m-XJV"/>
+                    <constraint firstItem="k8k-0n-VNH" firstAttribute="leading" secondItem="158-Pq-ZjB" secondAttribute="leading" constant="15" id="Z7Y-8v-3Ja"/>
+                    <constraint firstAttribute="trailing" secondItem="k8k-0n-VNH" secondAttribute="trailing" constant="15" id="qxp-AK-RGJ"/>
+                    <constraint firstItem="0MK-u9-1kO" firstAttribute="leading" secondItem="158-Pq-ZjB" secondAttribute="leading" constant="15" id="t5N-tJ-NiZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cashbackContainer" destination="PdB-S3-lZA" id="q6F-NQ-xYa"/>
+                <outlet property="cashbackPercentage" destination="SDd-BI-PO4" id="yKs-60-fGF"/>
+                <outlet property="containerView" destination="0MK-u9-1kO" id="3nk-nr-OGd"/>
+                <outlet property="earnLabel" destination="yw0-DF-0sl" id="Dmp-iU-V0Y"/>
+                <outlet property="lbLearn" destination="k8k-0n-VNH" id="FLt-KP-j7p"/>
+                <outlet property="powerupContainer" destination="War-HY-EtI" id="Lzo-tJ-dM2"/>
+                <outlet property="powerupContainerHeightAnchor" destination="Z9f-o6-5y6" id="1dU-g1-ney"/>
+                <outlet property="powerupPercentage" destination="vNF-6T-7HK" id="vqh-LY-KXm"/>
+            </connections>
+            <point key="canvasLocation" x="61.5" y="-239"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cashback-icon-big" width="30" height="30"/>
+        <image name="lightning-icon-big" width="30" height="30"/>
+        <image name="white-right-arrow" width="13" height="22"/>
+    </resources>
+</document>

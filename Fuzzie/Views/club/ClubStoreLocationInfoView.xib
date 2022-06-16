@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ClubStoreLocationInfoView">
+            <rect key="frame" x="0.0" y="0.0" width="339" height="143"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="category-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Fhe-Wf-TfH">
+                    <rect key="frame" x="15" y="36.5" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="4vg-Cq-PZb"/>
+                        <constraint firstAttribute="height" constant="70" id="EyW-xb-VEN"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zT7-JO-Wxm">
+                    <rect key="frame" x="95" y="40" width="183" height="62.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tanuki Raw" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYT-YA-Ign">
+                            <rect key="frame" x="0.0" y="0.0" width="72" height="17"/>
+                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
+                            <color key="textColor" red="0.14707999999999999" green="0.14707999999999999" blue="0.14707999999999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="East Cost Park" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bw8-X4-Qja">
+                            <rect key="frame" x="0.0" y="25" width="76.5" height="14.5"/>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                            <color key="textColor" red="0.14707999999999999" green="0.14707999999999999" blue="0.14707999999999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Hc6-ab-jj9">
+                            <rect key="frame" x="0.0" y="47.5" width="59.5" height="15"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sub-category-black-96-1" translatesAutoresizingMaskIntoConstraints="NO" id="Wlr-x4-Ws6">
+                                    <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="15" id="71A-2w-lLi"/>
+                                        <constraint firstAttribute="height" constant="15" id="8wd-oh-OFa"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Japanese" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jgf-K6-ZKJ">
+                                    <rect key="frame" x="19" y="0.0" width="40.5" height="12"/>
+                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="10"/>
+                                    <color key="textColor" red="0.57528999999999997" green="0.57526999999999995" blue="0.57528000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.2 km" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3B-0a-HWU">
+                    <rect key="frame" x="288" y="92" width="36" height="14.5"/>
+                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                    <color key="textColor" red="0.57528999999999997" green="0.57526999999999995" blue="0.57528000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Fhe-Wf-TfH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="06Y-B6-DFK"/>
+                <constraint firstItem="l3B-0a-HWU" firstAttribute="leading" secondItem="zT7-JO-Wxm" secondAttribute="trailing" constant="10" id="0xM-S7-bja"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="l3B-0a-HWU" secondAttribute="trailing" constant="15" id="b4f-3N-Urz"/>
+                <constraint firstItem="zT7-JO-Wxm" firstAttribute="leading" secondItem="Fhe-Wf-TfH" secondAttribute="trailing" constant="10" id="c9a-LO-8P2"/>
+                <constraint firstItem="l3B-0a-HWU" firstAttribute="bottom" secondItem="Fhe-Wf-TfH" secondAttribute="bottom" id="fLk-IO-tLj"/>
+                <constraint firstItem="Fhe-Wf-TfH" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="rSr-Yj-urB"/>
+                <constraint firstItem="zT7-JO-Wxm" firstAttribute="centerY" secondItem="Fhe-Wf-TfH" secondAttribute="centerY" id="yHJ-MI-c2O"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="ivBrand" destination="Fhe-Wf-TfH" id="GyM-3h-YHO"/>
+                <outlet property="ivCategory" destination="Wlr-x4-Ws6" id="p5c-kF-p6g"/>
+                <outlet property="lbBrandName" destination="JYT-YA-Ign" id="bif-3b-ZTE"/>
+                <outlet property="lbCategory" destination="Jgf-K6-ZKJ" id="jNc-9w-xo2"/>
+                <outlet property="lbDistance" destination="l3B-0a-HWU" id="kQ5-y3-L8p"/>
+                <outlet property="lbStoreName" destination="bw8-X4-Qja" id="0tT-F2-rxU"/>
+            </connections>
+            <point key="canvasLocation" x="-17.5" y="-61.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="category-placeholder" width="400" height="400"/>
+        <image name="sub-category-black-96-1" width="27" height="27"/>
+    </resources>
+</document>

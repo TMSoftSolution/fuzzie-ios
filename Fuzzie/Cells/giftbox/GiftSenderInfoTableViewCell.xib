@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="190" id="Djc-z2-bdp" customClass="GiftSenderInfoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="190"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Djc-z2-bdp" id="XZX-Jd-w80">
+                <rect key="frame" x="0.0" y="0.0" width="380" height="189.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fHX-3x-DiK">
+                        <rect key="frame" x="0.0" y="10" width="380" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FROM: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbn-dZ-hqt">
+                                <rect key="frame" x="16" y="22.5" width="44" height="16"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="13"/>
+                                <color key="textColor" red="0.67843137254901964" green="0.67843137254901964" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j72-gJ-DN7">
+                                <rect key="frame" x="68" y="0.0" width="312" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="xWl-uy-kXN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="BbU-ZB-9HI"/>
+                            <constraint firstItem="cbn-dZ-hqt" firstAttribute="leading" secondItem="fHX-3x-DiK" secondAttribute="leading" constant="16" id="OXb-6e-gXA"/>
+                            <constraint firstItem="j72-gJ-DN7" firstAttribute="leading" secondItem="cbn-dZ-hqt" secondAttribute="trailing" constant="8" id="Pyc-pX-ETa"/>
+                            <constraint firstItem="cbn-dZ-hqt" firstAttribute="centerY" secondItem="fHX-3x-DiK" secondAttribute="centerY" id="WAM-QG-X2B"/>
+                            <constraint firstAttribute="trailing" secondItem="j72-gJ-DN7" secondAttribute="trailing" id="bmF-Hp-HH4"/>
+                            <constraint firstItem="j72-gJ-DN7" firstAttribute="centerY" secondItem="fHX-3x-DiK" secondAttribute="centerY" id="sq9-8C-DQW"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hR1-a6-3Rr">
+                        <rect key="frame" x="16" y="70" width="348" height="100"/>
+                        <attributedString key="attributedText">
+                            <fragment>
+                                <string key="content">Happy birthday to you Julie! May all your hopes and dreams come true this year. Have a blast and take care of you during this summer! Enjoy your trip to NYC and let me know how was ember’s food !
+Regards!</string>
+                                <attributes>
+                                    <color key="NSColor" red="0.25882352941176467" green="0.25882352941176467" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="13" name="Lato-Regular"/>
+                                    <real key="NSKern" value="0.0"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="20" maximumLineHeight="20" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="fHX-3x-DiK" secondAttribute="trailing" id="4hr-sf-XBR"/>
+                    <constraint firstItem="hR1-a6-3Rr" firstAttribute="leading" secondItem="XZX-Jd-w80" secondAttribute="leading" constant="16" id="GZc-AZ-gbT"/>
+                    <constraint firstAttribute="trailing" secondItem="hR1-a6-3Rr" secondAttribute="trailing" constant="16" id="Nxn-jK-ULw"/>
+                    <constraint firstItem="fHX-3x-DiK" firstAttribute="top" secondItem="XZX-Jd-w80" secondAttribute="top" constant="10" id="Nyo-5a-bIO"/>
+                    <constraint firstItem="fHX-3x-DiK" firstAttribute="centerX" secondItem="XZX-Jd-w80" secondAttribute="centerX" id="UWW-q9-h9a"/>
+                    <constraint firstItem="hR1-a6-3Rr" firstAttribute="top" secondItem="fHX-3x-DiK" secondAttribute="bottom" id="XTO-pt-aVk"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="hR1-a6-3Rr" secondAttribute="bottom" constant="9" id="j2d-yb-J90"/>
+                    <constraint firstItem="fHX-3x-DiK" firstAttribute="leading" secondItem="XZX-Jd-w80" secondAttribute="leading" id="s7H-l9-vwY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lbMessage" destination="hR1-a6-3Rr" id="QG2-PO-j54"/>
+                <outlet property="senderView" destination="j72-gJ-DN7" id="1Og-DV-2lc"/>
+            </connections>
+            <point key="canvasLocation" x="-10" y="-54"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Brandon_blk.otf">
+            <string>BrandonGrotesque-Black</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LocationVerifyView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image-location-verify" translatesAutoresizingMaskIntoConstraints="NO" id="pB1-L5-ZdA">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-location-search" translatesAutoresizingMaskIntoConstraints="NO" id="gT4-kb-3Ao">
+                    <rect key="frame" x="142.5" y="269.5" width="90" height="88"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VERIFYING OUTLET LOCATION…" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYe-Oo-tlr">
+                    <rect key="frame" x="15" y="373.5" width="345" height="23"/>
+                    <fontDescription key="fontDescription" name="BrandonGrotesque-Black" family="Brandon Grotesque" pointSize="16"/>
+                    <color key="textColor" red="1" green="0.99999000000000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="iYe-Oo-tlr" firstAttribute="top" secondItem="gT4-kb-3Ao" secondAttribute="bottom" constant="16" id="1yL-N7-4VA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="iYe-Oo-tlr" secondAttribute="trailing" constant="15" id="CvR-J9-cDq"/>
+                <constraint firstItem="pB1-L5-ZdA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="EdX-Tp-gt9"/>
+                <constraint firstItem="gT4-kb-3Ao" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-20" id="HLk-HP-cgC"/>
+                <constraint firstItem="pB1-L5-ZdA" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="IUF-gO-5hm"/>
+                <constraint firstItem="iYe-Oo-tlr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="LKd-lG-8aQ"/>
+                <constraint firstItem="pB1-L5-ZdA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="T5L-3M-w44"/>
+                <constraint firstItem="gT4-kb-3Ao" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="VAb-Ne-PHx"/>
+                <constraint firstItem="pB1-L5-ZdA" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="tJc-bf-E2N"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="59.5" y="58.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon-location-search" width="90" height="88"/>
+        <image name="image-location-verify" width="320" height="568"/>
+    </resources>
+</document>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="KGk-i7-Jjw" customClass="BankRewardDetailTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="366" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="366" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fyZ-xf-AOB">
+                        <rect key="frame" x="15" y="27" width="6" height="6"/>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.24313725490196078" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="6" id="jdR-ab-17j"/>
+                            <constraint firstAttribute="height" constant="6" id="xdw-Z4-wRB"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oOS-Qr-0Z9">
+                        <rect key="frame" x="29" y="22" width="322" height="16"/>
+                        <string key="text">10% cashback on weekend dining locally
+</string>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="13"/>
+                        <color key="textColor" red="0.26274999999999998" green="0.26274999999999998" blue="0.26274999999999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="oOS-Qr-0Z9" secondAttribute="trailing" constant="15" id="Iwn-8O-AwZ"/>
+                    <constraint firstItem="oOS-Qr-0Z9" firstAttribute="centerY" secondItem="fyZ-xf-AOB" secondAttribute="centerY" id="beY-v9-f45"/>
+                    <constraint firstItem="oOS-Qr-0Z9" firstAttribute="leading" secondItem="fyZ-xf-AOB" secondAttribute="trailing" constant="8" id="iJB-vE-nxv"/>
+                    <constraint firstItem="fyZ-xf-AOB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="jrN-BU-2Aa"/>
+                    <constraint firstItem="fyZ-xf-AOB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="kP8-MJ-COp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lbDesc" destination="oOS-Qr-0Z9" id="yUP-Lf-r3A"/>
+                <outlet property="symbolView" destination="fyZ-xf-AOB" id="aKw-FU-gUa"/>
+            </connections>
+            <point key="canvasLocation" x="91" y="68"/>
+        </tableViewCell>
+    </objects>
+</document>

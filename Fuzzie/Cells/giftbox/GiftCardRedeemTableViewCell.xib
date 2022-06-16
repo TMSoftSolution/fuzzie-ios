@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Brandon_blk.otf">
+            <string>BrandonGrotesque-Black</string>
+        </array>
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="216" id="KGk-i7-Jjw" customClass="GiftCardRedeemTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="218"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="382" height="217.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UhJ-kn-Nib">
+                        <rect key="frame" x="23" y="18" width="336" height="50"/>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.24313725489999999" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="7KB-Yb-a1T"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="BrandonGrotesque-Black" family="Brandon Grotesque" pointSize="14"/>
+                        <state key="normal" title="REDEEM">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="redeemButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="zIC-9y-xYq"/>
+                        </connections>
+                    </button>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jfS-q8-8Kp">
+                        <rect key="frame" x="23" y="68" width="336" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REDEEM THIS OFFER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="myJ-Ws-ePl">
+                                <rect key="frame" x="104" y="10" width="128" height="19"/>
+                                <fontDescription key="fontDescription" name="BrandonGrotesque-Black" family="Brandon Grotesque" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Redemption starts on 30 Dec 2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBA-WU-9d6">
+                                <rect key="frame" x="68" y="33" width="200.5" height="16"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="tBA-WU-9d6" firstAttribute="centerX" secondItem="jfS-q8-8Kp" secondAttribute="centerX" id="6nr-Dq-SzM"/>
+                            <constraint firstItem="myJ-Ws-ePl" firstAttribute="top" secondItem="jfS-q8-8Kp" secondAttribute="top" constant="10" id="PXx-yi-EfZ"/>
+                            <constraint firstAttribute="height" constant="60" id="TZi-gU-inO"/>
+                            <constraint firstItem="myJ-Ws-ePl" firstAttribute="centerX" secondItem="jfS-q8-8Kp" secondAttribute="centerX" id="adv-dI-jkr"/>
+                            <constraint firstItem="tBA-WU-9d6" firstAttribute="top" secondItem="myJ-Ws-ePl" secondAttribute="bottom" constant="4" id="dJN-j5-IeJ"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LcM-Pu-QeC">
+                        <rect key="frame" x="23" y="144" width="336" height="20"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valid till: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWt-a0-TaU">
+                                <rect key="frame" x="0.0" y="2.5" width="52" height="16"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="13"/>
+                                <color key="textColor" red="0.67843137249999996" green="0.67843137249999996" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8OV-MM-MGm">
+                                <rect key="frame" x="54" y="2" width="30.5" height="16"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="13"/>
+                                <color key="textColor" red="0.25882352939999997" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iWt-a0-TaU" firstAttribute="centerY" secondItem="LcM-Pu-QeC" secondAttribute="centerY" id="Wxc-hN-D5G"/>
+                            <constraint firstItem="8OV-MM-MGm" firstAttribute="centerY" secondItem="LcM-Pu-QeC" secondAttribute="centerY" id="ZyV-FJ-Vdc"/>
+                            <constraint firstAttribute="height" constant="20" id="dyY-lq-cfD"/>
+                            <constraint firstItem="iWt-a0-TaU" firstAttribute="leading" secondItem="LcM-Pu-QeC" secondAttribute="leading" id="ndo-lA-KIP"/>
+                            <constraint firstItem="8OV-MM-MGm" firstAttribute="leading" secondItem="iWt-a0-TaU" secondAttribute="trailing" constant="2" id="ryD-z6-zdu"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5g1-7l-Lna">
+                        <rect key="frame" x="23" y="164" width="336" height="20"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Redeemed on: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Zq-4h-4x6">
+                                <rect key="frame" x="0.0" y="2.5" width="85" height="16"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="13"/>
+                                <color key="textColor" red="0.67843137254901964" green="0.67843137254901964" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvW-Nu-AK3">
+                                <rect key="frame" x="87" y="2" width="30.5" height="16"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="13"/>
+                                <color key="textColor" red="0.25882352941176467" green="0.25882352941176467" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jvW-Nu-AK3" firstAttribute="leading" secondItem="4Zq-4h-4x6" secondAttribute="trailing" constant="2" id="66d-cY-ltO"/>
+                            <constraint firstItem="4Zq-4h-4x6" firstAttribute="leading" secondItem="5g1-7l-Lna" secondAttribute="leading" id="KWC-dh-M2a"/>
+                            <constraint firstAttribute="height" constant="20" id="nOg-4j-m1e"/>
+                            <constraint firstItem="4Zq-4h-4x6" firstAttribute="centerY" secondItem="5g1-7l-Lna" secondAttribute="centerY" id="or3-VO-5Ty"/>
+                            <constraint firstItem="jvW-Nu-AK3" firstAttribute="centerY" secondItem="5g1-7l-Lna" secondAttribute="centerY" id="zGs-50-6mT"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fdf-50-3B1">
+                        <rect key="frame" x="23" y="184" width="336" height="20"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order number: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3h-6c-gTn">
+                                <rect key="frame" x="0.0" y="2.5" width="87.5" height="16"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="13"/>
+                                <color key="textColor" red="0.67843137249999996" green="0.67843137249999996" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dux-Ma-vgq">
+                                <rect key="frame" x="89.5" y="2" width="30.5" height="16"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="13"/>
+                                <color key="textColor" red="0.25882352939999997" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Dux-Ma-vgq" firstAttribute="centerY" secondItem="Fdf-50-3B1" secondAttribute="centerY" id="8fd-5c-Hs8"/>
+                            <constraint firstItem="a3h-6c-gTn" firstAttribute="centerY" secondItem="Fdf-50-3B1" secondAttribute="centerY" id="JgL-Dl-k5p"/>
+                            <constraint firstItem="Dux-Ma-vgq" firstAttribute="leading" secondItem="a3h-6c-gTn" secondAttribute="trailing" constant="2" id="PWo-Aa-5oW"/>
+                            <constraint firstItem="a3h-6c-gTn" firstAttribute="leading" secondItem="Fdf-50-3B1" secondAttribute="leading" id="aF1-i9-RXf"/>
+                            <constraint firstAttribute="height" constant="20" id="fsb-qF-Q3k"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="Fdf-50-3B1" secondAttribute="trailing" constant="7" id="12a-0D-6Np"/>
+                    <constraint firstItem="LcM-Pu-QeC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="Cq5-Mw-SLP"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="UhJ-kn-Nib" secondAttribute="trailing" constant="7" id="HkN-wZ-F0R"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="5g1-7l-Lna" secondAttribute="trailing" constant="7" id="L5t-W2-u5R"/>
+                    <constraint firstItem="5g1-7l-Lna" firstAttribute="top" secondItem="LcM-Pu-QeC" secondAttribute="bottom" id="NMH-L5-DcM"/>
+                    <constraint firstItem="LcM-Pu-QeC" firstAttribute="top" secondItem="jfS-q8-8Kp" secondAttribute="bottom" constant="16" id="TC0-fp-doM"/>
+                    <constraint firstItem="Fdf-50-3B1" firstAttribute="top" secondItem="5g1-7l-Lna" secondAttribute="bottom" id="W7A-fp-npK"/>
+                    <constraint firstItem="UhJ-kn-Nib" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="Ym8-EQ-eCm"/>
+                    <constraint firstItem="UhJ-kn-Nib" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="c66-6x-OKb"/>
+                    <constraint firstItem="5g1-7l-Lna" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="iso-EG-wYV"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Fdf-50-3B1" secondAttribute="bottom" constant="3" id="mS7-gN-gd3"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="jfS-q8-8Kp" secondAttribute="trailing" constant="7" id="mb5-NJ-6gn"/>
+                    <constraint firstItem="jfS-q8-8Kp" firstAttribute="top" secondItem="UhJ-kn-Nib" secondAttribute="bottom" id="qLc-tc-CNa"/>
+                    <constraint firstItem="Fdf-50-3B1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="riS-ds-hIS"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="LcM-Pu-QeC" secondAttribute="trailing" constant="7" id="tDb-1m-Ngk"/>
+                    <constraint firstItem="jfS-q8-8Kp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="uIq-F0-eFc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lbRedemption" destination="tBA-WU-9d6" id="t9J-57-zRC"/>
+                <outlet property="onlineRedeemDate" destination="jvW-Nu-AK3" id="f6B-4G-7y5"/>
+                <outlet property="onlineValidateView" destination="5g1-7l-Lna" id="lTV-DY-xxb"/>
+                <outlet property="onlineValidateViewHeightAnchor" destination="nOg-4j-m1e" id="bSf-vA-yYI"/>
+                <outlet property="orderNumber" destination="Dux-Ma-vgq" id="YmA-SS-ePf"/>
+                <outlet property="redeemButton" destination="UhJ-kn-Nib" id="bXJ-Iz-05M"/>
+                <outlet property="redemButtonHeightAnchor" destination="7KB-Yb-a1T" id="g1F-IT-hBP"/>
+                <outlet property="redemptionStartView" destination="jfS-q8-8Kp" id="uco-6f-111"/>
+                <outlet property="redemptionStartViewHeightAnchor" destination="TZi-gU-inO" id="2AI-Kt-NBg"/>
+                <outlet property="validDate" destination="8OV-MM-MGm" id="G0S-L6-vzd"/>
+                <outlet property="validViewHeightAnchor" destination="dyY-lq-cfD" id="jDX-i4-WnM"/>
+                <outlet property="valideView" destination="LcM-Pu-QeC" id="KvM-Wc-5hj"/>
+            </connections>
+            <point key="canvasLocation" x="45" y="146"/>
+        </tableViewCell>
+    </objects>
+</document>

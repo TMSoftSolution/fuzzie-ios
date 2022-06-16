@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12121"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="StoreInfoSliderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tmi-0w-Sg9" userLabel="Slider Icarousel" customClass="iCarousel">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BOk-4H-2bO" customClass="FXPageControl">
+                    <rect key="frame" x="0.0" y="220" width="320" height="20"/>
+                    <color key="backgroundColor" red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="ynz-2N-PXG"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="currentPage">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="dotSize">
+                            <real key="value" value="7"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="dotColor">
+                            <color key="value" red="0.96465145809999997" green="0.98015175389999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="dotShadowOffset">
+                            <size key="value" width="1" height="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="dotShadowBlur">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="selectedDotSize">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="selectedDotShadowBlur">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="selectedDotShadowOffset">
+                            <size key="value" width="0.0" height="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="image" keyPath="dotImage" value="slider-icon"/>
+                        <userDefinedRuntimeAttribute type="image" keyPath="selectedDotImage" value="slider-icon-selected"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="wrapEnabled" value="NO"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="hidesForSinglePage" value="NO"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="defersCurrentPageDisplay" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="BOk-4H-2bO" secondAttribute="bottom" id="3FN-Qs-qAh"/>
+                <constraint firstItem="BOk-4H-2bO" firstAttribute="top" secondItem="tmi-0w-Sg9" secondAttribute="bottom" id="4g4-vc-BUI"/>
+                <constraint firstItem="tmi-0w-Sg9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="FTM-qc-ZDG"/>
+                <constraint firstItem="BOk-4H-2bO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Qqe-hw-QjF"/>
+                <constraint firstAttribute="trailing" secondItem="BOk-4H-2bO" secondAttribute="trailing" id="T1U-aG-SDo"/>
+                <constraint firstAttribute="trailing" secondItem="tmi-0w-Sg9" secondAttribute="trailing" id="iPm-VD-1Yr"/>
+                <constraint firstItem="tmi-0w-Sg9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="u0m-7f-LzN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="carousel" destination="tmi-0w-Sg9" id="8eA-Ep-FcM"/>
+                <outlet property="pageControl" destination="BOk-4H-2bO" id="gbQ-p1-Ai0"/>
+                <outlet property="pageControlHeightAnchor" destination="ynz-2N-PXG" id="An0-XG-g6f"/>
+            </connections>
+            <point key="canvasLocation" x="53" y="56"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="slider-icon" width="7" height="7"/>
+        <image name="slider-icon-selected" width="7" height="7"/>
+    </resources>
+</document>

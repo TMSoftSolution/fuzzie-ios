@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SwitchOptionCell" id="5YI-2q-v5Z" customClass="SwitchOptionTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5YI-2q-v5Z" id="F2X-ow-PNX">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share likes and wishlist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jxt-jk-BPa">
+                        <rect key="frame" x="16" y="14" width="140.5" height="17"/>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                        <color key="textColor" red="0.25879135730000002" green="0.25884211060000001" blue="0.25878816840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8Of-x9-2i5">
+                        <rect key="frame" x="310" y="7" width="51" height="31"/>
+                        <color key="onTintColor" red="0.98714774849999998" green="0.2335442603" blue="0.2184894681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <connections>
+                            <action selector="switchChanged:" destination="5YI-2q-v5Z" eventType="valueChanged" id="GKM-pu-Def"/>
+                        </connections>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8Of-x9-2i5" firstAttribute="centerY" secondItem="Jxt-jk-BPa" secondAttribute="centerY" id="Ron-Dc-aTS"/>
+                    <constraint firstItem="Jxt-jk-BPa" firstAttribute="centerY" secondItem="F2X-ow-PNX" secondAttribute="centerY" id="ZBY-Mi-T94"/>
+                    <constraint firstItem="Jxt-jk-BPa" firstAttribute="leading" secondItem="F2X-ow-PNX" secondAttribute="leading" constant="16" id="lDG-EI-YJw"/>
+                    <constraint firstAttribute="trailing" secondItem="8Of-x9-2i5" secondAttribute="trailing" constant="16" id="mZ3-o5-Fm0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="switchButton" destination="8Of-x9-2i5" id="5a4-dQ-fXg"/>
+                <outlet property="title" destination="Jxt-jk-BPa" id="H5b-Li-FFp"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="54"/>
+        </tableViewCell>
+    </objects>
+</document>

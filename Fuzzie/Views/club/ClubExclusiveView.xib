@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Brandon_blk.otf">
+            <string>BrandonGrotesque-Black</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ClubExclusiveView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oVP-XI-DGx">
+                    <rect key="frame" x="32" y="103.5" width="311" height="460"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image-club-sign" translatesAutoresizingMaskIntoConstraints="NO" id="1WZ-OJ-DAc">
+                            <rect key="frame" x="0.0" y="0.0" width="311" height="200"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="200" id="kcO-ej-Sya"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="club-logo" translatesAutoresizingMaskIntoConstraints="NO" id="cTt-vS-zEv">
+                            <rect key="frame" x="72.5" y="24.5" width="165" height="151"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="teN-Fd-cI4">
+                            <rect key="frame" x="16" y="308" width="279" height="42"/>
+                            <attributedString key="attributedText">
+                                <fragment content="Join the Fuzzie Club now to get this item and access many more deals.">
+                                    <attributes>
+                                        <color key="NSColor" red="0.26274999999999998" green="0.26273999999999997" blue="0.26274999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <font key="NSFont" size="13" name="Lato-Regular"/>
+                                        <real key="NSKern" value="0.0"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="21" maximumLineHeight="21" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                            <tabStops>
+                                                <textTab alignment="left" location="28">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="56">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="84">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="112">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="140">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="168">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="196">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="224">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="252">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="280">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="308">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="336">
+                                                    <options/>
+                                                </textTab>
+                                            </tabStops>
+                                        </paragraphStyle>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7S-Yu-qfU">
+                            <rect key="frame" x="24" y="380" width="263" height="50"/>
+                            <color key="backgroundColor" red="0.98039215690000003" green="0.24313725489999999" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="Bdf-58-XpQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="BrandonGrotesque-Black" family="Brandon Grotesque" pointSize="13"/>
+                            <state key="normal" title="EXPLORE THE CLUB">
+                                <color key="titleColor" red="1" green="0.99999000000000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <connections>
+                                <action selector="exploreButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="TBR-Ll-8fY"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2S-ny-Jsr">
+                            <rect key="frame" x="16" y="232" width="279" height="56"/>
+                            <attributedString key="attributedText">
+                                <fragment>
+                                    <string key="content">Exclusive for Fuzzie
+Club Members</string>
+                                    <attributes>
+                                        <color key="NSColor" red="0.26274999999999998" green="0.26273999999999997" blue="0.26274999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <font key="NSFont" size="22" name="Lato-Black"/>
+                                        <real key="NSKern" value="0.0"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="28" maximumLineHeight="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                            <tabStops>
+                                                <textTab alignment="left" location="28">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="56">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="84">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="112">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="140">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="168">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="196">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="224">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="252">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="280">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="308">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="336">
+                                                    <options/>
+                                                </textTab>
+                                            </tabStops>
+                                        </paragraphStyle>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="1WZ-OJ-DAc" firstAttribute="top" secondItem="oVP-XI-DGx" secondAttribute="top" id="58v-HB-Azy"/>
+                        <constraint firstItem="I7S-Yu-qfU" firstAttribute="leading" secondItem="oVP-XI-DGx" secondAttribute="leading" constant="24" id="5Q8-9k-ull"/>
+                        <constraint firstItem="cTt-vS-zEv" firstAttribute="centerY" secondItem="1WZ-OJ-DAc" secondAttribute="centerY" id="8HF-D2-MdK"/>
+                        <constraint firstItem="cTt-vS-zEv" firstAttribute="centerX" secondItem="1WZ-OJ-DAc" secondAttribute="centerX" id="Cr7-pI-9ct"/>
+                        <constraint firstItem="teN-Fd-cI4" firstAttribute="top" secondItem="b2S-ny-Jsr" secondAttribute="bottom" constant="20" id="GSt-Ju-MMq"/>
+                        <constraint firstItem="b2S-ny-Jsr" firstAttribute="top" secondItem="1WZ-OJ-DAc" secondAttribute="bottom" constant="32" id="LFw-cQ-JeO"/>
+                        <constraint firstItem="I7S-Yu-qfU" firstAttribute="top" secondItem="teN-Fd-cI4" secondAttribute="bottom" constant="30" id="YV4-tv-Qu8"/>
+                        <constraint firstItem="1WZ-OJ-DAc" firstAttribute="leading" secondItem="oVP-XI-DGx" secondAttribute="leading" id="aSB-mD-Fg3"/>
+                        <constraint firstItem="teN-Fd-cI4" firstAttribute="leading" secondItem="oVP-XI-DGx" secondAttribute="leading" constant="16" id="adK-sx-J4Z"/>
+                        <constraint firstAttribute="trailing" secondItem="1WZ-OJ-DAc" secondAttribute="trailing" id="dBm-WA-9Gh"/>
+                        <constraint firstAttribute="trailing" secondItem="teN-Fd-cI4" secondAttribute="trailing" constant="16" id="gic-zI-Igr"/>
+                        <constraint firstAttribute="bottom" secondItem="I7S-Yu-qfU" secondAttribute="bottom" constant="30" id="pVC-cD-JQ1"/>
+                        <constraint firstAttribute="trailing" secondItem="b2S-ny-Jsr" secondAttribute="trailing" constant="16" id="q1W-xb-PmD"/>
+                        <constraint firstItem="b2S-ny-Jsr" firstAttribute="leading" secondItem="oVP-XI-DGx" secondAttribute="leading" constant="16" id="rCQ-mQ-87r"/>
+                        <constraint firstAttribute="trailing" secondItem="I7S-Yu-qfU" secondAttribute="trailing" constant="24" id="xRI-hc-TWQ"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSk-BG-sGB">
+                    <rect key="frame" x="323" y="93.5" width="30" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="FhV-ra-mjx"/>
+                        <constraint firstAttribute="height" constant="30" id="oP0-px-Vee"/>
+                    </constraints>
+                    <state key="normal" image="icon-close-red"/>
+                    <connections>
+                        <action selector="closeButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="QRa-d1-Teh"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="oVP-XI-DGx" secondAttribute="trailing" constant="32" id="S0D-Ia-M8N"/>
+                <constraint firstItem="FSk-BG-sGB" firstAttribute="trailing" secondItem="oVP-XI-DGx" secondAttribute="trailing" constant="10" id="TsA-YW-l5y"/>
+                <constraint firstItem="oVP-XI-DGx" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="o4K-LZ-1Tu"/>
+                <constraint firstItem="FSk-BG-sGB" firstAttribute="top" secondItem="oVP-XI-DGx" secondAttribute="top" constant="-10" id="qUY-zE-zu6"/>
+                <constraint firstItem="oVP-XI-DGx" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="rWs-kr-SHz"/>
+                <constraint firstItem="oVP-XI-DGx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="wuf-Fk-U2H"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btnClose" destination="FSk-BG-sGB" id="Y5k-HK-Hgf"/>
+                <outlet property="btnExplore" destination="I7S-Yu-qfU" id="by9-Pv-Yrt"/>
+                <outlet property="mainView" destination="oVP-XI-DGx" id="hGA-23-1WS"/>
+            </connections>
+            <point key="canvasLocation" x="68" y="59"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="club-logo" width="165" height="151"/>
+        <image name="icon-close-red" width="12" height="12"/>
+        <image name="image-club-sign" width="320" height="270"/>
+    </resources>
+</document>

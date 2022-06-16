@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Brandon_blk.otf">
+            <string>BrandonGrotesque-Black</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="BrandListCell" rowHeight="280" id="HbP-9n-Mic" customClass="BrandListTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="290"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HbP-9n-Mic" id="5o1-qO-IeB">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="289.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bBN-fc-mch" userLabel="Border top">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="srd-M8-fi7"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QzU-HO-Xlv" userLabel="Border bottom">
+                        <rect key="frame" x="0.0" y="288.5" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="RHo-t2-OBE"/>
+                        </constraints>
+                    </view>
+                    <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="x0E-Rz-wa3">
+                        <rect key="frame" x="0.0" y="49" width="320" height="219.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4Xn-Kj-KMS">
+                            <size key="itemSize" width="180" height="205"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="HbP-9n-Mic" id="cQP-BH-3Sv"/>
+                            <outlet property="delegate" destination="HbP-9n-Mic" id="5zB-FC-m4x"/>
+                        </connections>
+                    </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RECOMMENDED BRANDS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnV-q7-0ge">
+                        <rect key="frame" x="15" y="15" width="169.5" height="20"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20.5" id="zqA-Q3-Du7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="BrandonGrotesque-Black" family="Brandon Grotesque" pointSize="14"/>
+                        <color key="textColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqY-CG-y1e">
+                        <rect key="frame" x="252" y="10" width="53" height="30"/>
+                        <fontDescription key="fontDescription" name="BrandonGrotesque-Black" family="Brandon Grotesque" pointSize="12"/>
+                        <state key="normal" title="VIEW ALL">
+                            <color key="titleColor" red="0.98039215690000003" green="0.24313725489999999" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="viewAllButtonPressed:" destination="HbP-9n-Mic" eventType="touchUpInside" id="CHz-PB-Pgr"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uJ1-3j-cZI" customClass="FLAnimatedImageView">
+                        <rect key="frame" x="135" y="120" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Z3t-fm-2Tk"/>
+                            <constraint firstAttribute="width" constant="50" id="vu4-qU-7bT"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QzU-HO-Xlv" firstAttribute="top" secondItem="x0E-Rz-wa3" secondAttribute="bottom" constant="20" id="4xa-ih-Ynr"/>
+                    <constraint firstItem="uJ1-3j-cZI" firstAttribute="centerX" secondItem="5o1-qO-IeB" secondAttribute="centerX" id="6hj-1N-fDZ"/>
+                    <constraint firstItem="uJ1-3j-cZI" firstAttribute="centerY" secondItem="5o1-qO-IeB" secondAttribute="centerY" id="7og-Se-LoL"/>
+                    <constraint firstItem="x0E-Rz-wa3" firstAttribute="leading" secondItem="5o1-qO-IeB" secondAttribute="leading" id="C1Y-7R-yDu"/>
+                    <constraint firstItem="x0E-Rz-wa3" firstAttribute="top" secondItem="qnV-q7-0ge" secondAttribute="bottom" constant="14" id="Huv-sO-OfR"/>
+                    <constraint firstAttribute="trailing" secondItem="jqY-CG-y1e" secondAttribute="trailing" constant="15" id="MHy-OR-ROY"/>
+                    <constraint firstItem="QzU-HO-Xlv" firstAttribute="leading" secondItem="5o1-qO-IeB" secondAttribute="leading" id="Mh3-gA-3gA"/>
+                    <constraint firstItem="jqY-CG-y1e" firstAttribute="centerY" secondItem="qnV-q7-0ge" secondAttribute="centerY" id="RGQ-Pc-MHU"/>
+                    <constraint firstItem="qnV-q7-0ge" firstAttribute="top" secondItem="bBN-fc-mch" secondAttribute="bottom" constant="14" id="S45-p2-K4t"/>
+                    <constraint firstItem="bBN-fc-mch" firstAttribute="top" secondItem="5o1-qO-IeB" secondAttribute="top" id="VDK-yb-l0n"/>
+                    <constraint firstAttribute="bottom" secondItem="QzU-HO-Xlv" secondAttribute="bottom" id="l3l-my-hJe"/>
+                    <constraint firstItem="qnV-q7-0ge" firstAttribute="leading" secondItem="5o1-qO-IeB" secondAttribute="leading" constant="15" id="mvh-KN-rpK"/>
+                    <constraint firstItem="bBN-fc-mch" firstAttribute="leading" secondItem="5o1-qO-IeB" secondAttribute="leading" id="q5T-z1-q8j"/>
+                    <constraint firstAttribute="trailing" secondItem="bBN-fc-mch" secondAttribute="trailing" id="xeF-yE-FzL"/>
+                    <constraint firstAttribute="trailing" secondItem="x0E-Rz-wa3" secondAttribute="trailing" id="zWg-3b-NlR"/>
+                    <constraint firstAttribute="trailing" secondItem="QzU-HO-Xlv" secondAttribute="trailing" id="zmy-KR-zd6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectionView" destination="x0E-Rz-wa3" id="91U-gj-CgO"/>
+                <outlet property="fuzzieLoader" destination="uJ1-3j-cZI" id="Fpu-76-RV2"/>
+                <outlet property="titleLabel" destination="qnV-q7-0ge" id="gyJ-IH-7e0"/>
+                <outlet property="viewAllButton" destination="jqY-CG-y1e" id="Ykg-jZ-3l4"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="75"/>
+        </tableViewCell>
+    </objects>
+</document>

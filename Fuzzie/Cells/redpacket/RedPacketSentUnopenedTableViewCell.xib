@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Brandon_blk.otf">
+            <string>BrandonGrotesque-Black</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="68" id="KGk-i7-Jjw" customClass="RedPacketSentUnopenedTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="67.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHF-zn-F1j">
+                        <rect key="frame" x="245" y="21.5" width="60" height="25"/>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.24313725489999999" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="j2v-mC-x9Y"/>
+                            <constraint firstAttribute="width" constant="60" id="m60-tb-4vf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="BrandonGrotesque-Black" family="Brandon Grotesque" pointSize="12"/>
+                        <state key="normal" title="SEND">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="sendButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="If1-0w-y9y"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCP-rf-nFR" customClass="MDHTMLLabel">
+                        <rect key="frame" x="15" y="20" width="215" height="27.5"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Some Lucky Packets haven't been opened yet. You can ">
+                                <attributes>
+                                    <color key="NSColor" red="0.2627450980392157" green="0.2627450980392157" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="13" name="Lato-Bold"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="send them again to your friends here.">
+                                <attributes>
+                                    <color key="NSColor" red="0.98039215686274506" green="0.24313725490196078" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="13" name="Lato-Bold"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mWW-Jd-rOb" userLabel="separator">
+                        <rect key="frame" x="15" y="0.0" width="305" height="1"/>
+                        <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="M8i-wQ-duQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yES-Ye-uVg"/>
+                    </view>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zio-0w-5tZ" userLabel="separator">
+                        <rect key="frame" x="0.0" y="66.5" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="WjQ-Zw-T1J"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UAM-hD-BJ6"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mWW-Jd-rOb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="0Ar-o8-vJU"/>
+                    <constraint firstAttribute="trailing" secondItem="RHF-zn-F1j" secondAttribute="trailing" constant="15" id="3zS-I1-wIt"/>
+                    <constraint firstAttribute="bottom" secondItem="Zio-0w-5tZ" secondAttribute="bottom" id="5CT-hN-Sgi"/>
+                    <constraint firstAttribute="trailing" secondItem="Zio-0w-5tZ" secondAttribute="trailing" id="BPa-MR-875"/>
+                    <constraint firstItem="RHF-zn-F1j" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Lcj-Dx-Luc"/>
+                    <constraint firstAttribute="bottom" secondItem="bCP-rf-nFR" secondAttribute="bottom" constant="20" id="WpH-jg-GOS"/>
+                    <constraint firstItem="bCP-rf-nFR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="Wri-Gk-Ara"/>
+                    <constraint firstItem="Zio-0w-5tZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="am0-oU-OY1"/>
+                    <constraint firstItem="bCP-rf-nFR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="gGm-pb-LzU"/>
+                    <constraint firstAttribute="trailing" secondItem="mWW-Jd-rOb" secondAttribute="trailing" id="ocB-FH-4Bf"/>
+                    <constraint firstItem="mWW-Jd-rOb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="sZV-Nb-TpZ"/>
+                    <constraint firstItem="RHF-zn-F1j" firstAttribute="leading" secondItem="bCP-rf-nFR" secondAttribute="trailing" constant="15" id="v2Q-Lg-YAb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="bottomSeparator" destination="Zio-0w-5tZ" id="FNp-zb-wSB"/>
+                <outlet property="btnSend" destination="RHF-zn-F1j" id="uTJ-8B-w6u"/>
+                <outlet property="lbNote" destination="bCP-rf-nFR" id="jBX-6k-kMh"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="64"/>
+        </tableViewCell>
+    </objects>
+</document>

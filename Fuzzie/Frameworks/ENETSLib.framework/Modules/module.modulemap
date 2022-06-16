@@ -1,0 +1,11 @@
+framework module ENETSLib {
+  umbrella header "ENETSLib.h"
+
+  export *
+  module * { export * }
+}
+
+module ENETSLib.Swift {
+    header "ENETSLib-Swift.h"
+    requires objc
+}

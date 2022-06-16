@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="119" id="bDb-31-rDV" customClass="ClubStoreStateTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="119"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bDb-31-rDV" id="a0n-4V-ALk">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="118.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-club-store-location-grey" translatesAutoresizingMaskIntoConstraints="NO" id="qwr-E0-Xxr">
+                        <rect key="frame" x="15" y="12" width="15" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="3bw-wN-cWG"/>
+                            <constraint firstAttribute="height" constant="20" id="OeL-2f-vpc"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpb-MW-hkw">
+                        <rect key="frame" x="43" y="25" width="36" height="15"/>
+                        <attributedString key="attributedText">
+                            <fragment content="0.2 km">
+                                <attributes>
+                                    <color key="NSColor" red="0.57528999999999997" green="0.57526999999999995" blue="0.57528000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <font key="NSFont" size="12" name="Lato-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIr-4g-fQy">
+                        <rect key="frame" x="274" y="4" width="31" height="27"/>
+                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="12"/>
+                        <state key="normal" title="more ">
+                            <color key="titleColor" red="1" green="0.30969999999999998" blue="0.27367000000000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </state>
+                        <connections>
+                            <action selector="moreButtonPressed:" destination="bDb-31-rDV" eventType="touchUpInside" id="8Ni-MQ-1te"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joo Chiat, Singapore" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRy-2V-ExV">
+                        <rect key="frame" x="43" y="4" width="128" height="17"/>
+                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
+                        <color key="textColor" red="0.26274999999999998" green="0.26273999999999997" blue="0.26274999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CuZ-fO-E2r" userLabel="Bottom Seperator">
+                        <rect key="frame" x="0.0" y="117.5" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="tFq-SQ-dPN"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rt1-4e-nwg" customClass="FZDashLine">
+                        <rect key="frame" x="15" y="60" width="290" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="nVR-Cm-XOP"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="dashColor">
+                                <color key="value" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="dashWidth">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="dashPadding">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   OPEN NOW   " textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efp-Ew-hsT">
+                        <rect key="frame" x="15" y="77" width="67.5" height="24"/>
+                        <color key="backgroundColor" red="0.31372549019607843" green="0.68235294117647061" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="o2h-R3-4CH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="10"/>
+                        <color key="textColor" red="1" green="0.99997999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UNTIL 11PM TODAY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Plw-yZ-7ZS">
+                        <rect key="frame" x="92.5" y="83.5" width="94" height="12"/>
+                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="10"/>
+                        <color key="textColor" red="0.24706" green="0.24704999999999999" blue="0.24706" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="efp-Ew-hsT" firstAttribute="leading" secondItem="a0n-4V-ALk" secondAttribute="leading" constant="15" id="0DE-H3-IA0"/>
+                    <constraint firstAttribute="trailing" secondItem="Rt1-4e-nwg" secondAttribute="trailing" constant="15" id="39l-a3-d2Q"/>
+                    <constraint firstItem="qwr-E0-Xxr" firstAttribute="leading" secondItem="a0n-4V-ALk" secondAttribute="leading" constant="15" id="8sX-Up-Xpc"/>
+                    <constraint firstItem="CuZ-fO-E2r" firstAttribute="top" secondItem="efp-Ew-hsT" secondAttribute="bottom" constant="16.5" id="9kF-3j-vew"/>
+                    <constraint firstAttribute="trailing" secondItem="CuZ-fO-E2r" secondAttribute="trailing" id="DGD-Ni-de5"/>
+                    <constraint firstItem="CRy-2V-ExV" firstAttribute="leading" secondItem="qwr-E0-Xxr" secondAttribute="trailing" constant="13" id="FCf-IQ-Nue"/>
+                    <constraint firstItem="efp-Ew-hsT" firstAttribute="top" secondItem="Rt1-4e-nwg" secondAttribute="bottom" constant="16" id="LHx-nc-TUx"/>
+                    <constraint firstItem="cIr-4g-fQy" firstAttribute="top" secondItem="a0n-4V-ALk" secondAttribute="top" constant="4" id="RkX-ok-6oH"/>
+                    <constraint firstItem="CuZ-fO-E2r" firstAttribute="leading" secondItem="a0n-4V-ALk" secondAttribute="leading" id="fPk-Yd-ETj"/>
+                    <constraint firstAttribute="bottom" secondItem="CuZ-fO-E2r" secondAttribute="bottom" id="jqX-MY-Wfd"/>
+                    <constraint firstItem="Plw-yZ-7ZS" firstAttribute="centerY" secondItem="efp-Ew-hsT" secondAttribute="centerY" id="n2k-d3-blW"/>
+                    <constraint firstItem="qwr-E0-Xxr" firstAttribute="top" secondItem="a0n-4V-ALk" secondAttribute="top" constant="12" id="n80-u1-FIp"/>
+                    <constraint firstAttribute="trailing" secondItem="cIr-4g-fQy" secondAttribute="trailing" constant="15" id="pRV-Tx-jfw"/>
+                    <constraint firstItem="Plw-yZ-7ZS" firstAttribute="leading" secondItem="efp-Ew-hsT" secondAttribute="trailing" constant="10" id="qUh-T7-kAM"/>
+                    <constraint firstItem="bpb-MW-hkw" firstAttribute="top" secondItem="CRy-2V-ExV" secondAttribute="bottom" constant="4" id="qf9-S6-Tvq"/>
+                    <constraint firstItem="bpb-MW-hkw" firstAttribute="leading" secondItem="CRy-2V-ExV" secondAttribute="leading" id="rXb-hW-vbG"/>
+                    <constraint firstItem="Rt1-4e-nwg" firstAttribute="top" secondItem="bpb-MW-hkw" secondAttribute="bottom" constant="20" id="rk6-do-tHG"/>
+                    <constraint firstItem="Rt1-4e-nwg" firstAttribute="leading" secondItem="a0n-4V-ALk" secondAttribute="leading" constant="15" id="sqY-ww-ZK6"/>
+                    <constraint firstItem="CRy-2V-ExV" firstAttribute="top" secondItem="a0n-4V-ALk" secondAttribute="top" constant="4" id="wca-eK-6er"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="spj-IW-t1S"/>
+            <connections>
+                <outlet property="btnMore" destination="cIr-4g-fQy" id="145-qB-TAD"/>
+                <outlet property="lbDistance" destination="bpb-MW-hkw" id="obV-4X-qw1"/>
+                <outlet property="lbOpen" destination="efp-Ew-hsT" id="qGO-Ah-3aR"/>
+                <outlet property="lbOpenState" destination="Plw-yZ-7ZS" id="uw1-DF-NXi"/>
+                <outlet property="lbStoreName" destination="CRy-2V-ExV" id="6MJ-uR-w5W"/>
+            </connections>
+            <point key="canvasLocation" x="85" y="208.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon-club-store-location-grey" width="15" height="20"/>
+    </resources>
+</document>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MapFilterTableViewCell" rowHeight="62" id="jKl-Eb-Hi5" customClass="MapFilterTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jKl-Eb-Hi5" id="hue-kw-zvR">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="61.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qrs-SN-vxk" userLabel="Separator">
+                        <rect key="frame" x="15" y="61" width="305" height="1"/>
+                        <color key="backgroundColor" red="0.89794141049999998" green="0.89809560779999997" blue="0.89793163539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="7WM-Tc-I2b"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-check" translatesAutoresizingMaskIntoConstraints="NO" id="EgF-ol-OXV">
+                        <rect key="frame" x="285" y="23.5" width="15" height="15"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="DGI-VB-4ma"/>
+                            <constraint firstAttribute="width" constant="15" id="qnI-EP-HYw"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sub-category-96-1" translatesAutoresizingMaskIntoConstraints="NO" id="Xik-jP-CWd">
+                        <rect key="frame" x="15" y="16" width="30" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="F2I-Qg-MoZ"/>
+                            <constraint firstAttribute="width" constant="30" id="r3o-qe-Fo0"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPh-f2-s5N">
+                        <rect key="frame" x="53" y="21.5" width="76" height="19"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                        <color key="textColor" red="0.26274509800000001" green="0.26274509800000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FPh-f2-s5N" firstAttribute="leading" secondItem="Xik-jP-CWd" secondAttribute="trailing" constant="8" id="19f-z8-2Og"/>
+                    <constraint firstItem="FPh-f2-s5N" firstAttribute="centerY" secondItem="hue-kw-zvR" secondAttribute="centerY" id="Bxz-sv-ffh"/>
+                    <constraint firstItem="Xik-jP-CWd" firstAttribute="leading" secondItem="hue-kw-zvR" secondAttribute="leading" constant="15" id="Dvd-II-IVH"/>
+                    <constraint firstAttribute="trailing" secondItem="qrs-SN-vxk" secondAttribute="trailing" id="GKv-mx-0qX"/>
+                    <constraint firstAttribute="bottom" secondItem="qrs-SN-vxk" secondAttribute="bottom" id="JAd-OD-5nW"/>
+                    <constraint firstItem="Xik-jP-CWd" firstAttribute="centerY" secondItem="hue-kw-zvR" secondAttribute="centerY" id="P4T-ba-smG"/>
+                    <constraint firstItem="qrs-SN-vxk" firstAttribute="leading" secondItem="hue-kw-zvR" secondAttribute="leading" constant="15" id="PmW-vv-pSB"/>
+                    <constraint firstItem="EgF-ol-OXV" firstAttribute="centerY" secondItem="FPh-f2-s5N" secondAttribute="centerY" id="fBb-tc-IJy"/>
+                    <constraint firstAttribute="trailing" secondItem="EgF-ol-OXV" secondAttribute="trailing" constant="20" id="ho1-0O-8WS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="checkImage" destination="EgF-ol-OXV" id="uMM-eG-8pF"/>
+                <outlet property="iconImage" destination="Xik-jP-CWd" id="K7u-mc-oU3"/>
+                <outlet property="nameLabel" destination="FPh-f2-s5N" id="RXF-aX-Svg"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="75"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon-check" width="15" height="10"/>
+        <image name="sub-category-96-1" width="24" height="24"/>
+    </resources>
+</document>

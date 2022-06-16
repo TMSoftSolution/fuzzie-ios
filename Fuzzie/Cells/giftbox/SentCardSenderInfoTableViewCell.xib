@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="154" id="KGk-i7-Jjw" customClass="SentCardSenderInfoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="154"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="330" height="153.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UKL-ng-A9B">
+                        <rect key="frame" x="23" y="16" width="284" height="20"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sent to: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJO-Xw-sih">
+                                <rect key="frame" x="0.0" y="2.5" width="47.5" height="16"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="13"/>
+                                <color key="textColor" red="0.64488000000000001" green="0.64488000000000001" blue="0.64488000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Julie Achab" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9WE-Up-Ye0">
+                                <rect key="frame" x="49.5" y="2" width="67" height="16"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="13"/>
+                                <color key="textColor" red="0.26274999999999998" green="0.26274999999999998" blue="0.26274999999999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xJO-Xw-sih" firstAttribute="centerY" secondItem="UKL-ng-A9B" secondAttribute="centerY" id="1Kl-Za-Auu"/>
+                            <constraint firstItem="9WE-Up-Ye0" firstAttribute="leading" secondItem="xJO-Xw-sih" secondAttribute="trailing" constant="2" id="BDI-yx-isL"/>
+                            <constraint firstItem="xJO-Xw-sih" firstAttribute="leading" secondItem="UKL-ng-A9B" secondAttribute="leading" id="WxZ-1y-Gy7"/>
+                            <constraint firstAttribute="height" constant="20" id="kJD-xk-PGk"/>
+                            <constraint firstItem="9WE-Up-Ye0" firstAttribute="centerY" secondItem="UKL-ng-A9B" secondAttribute="centerY" id="t6Q-6k-Qb8"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy birthday buddy! Wish you the best for everything and i’m looking forward to see you again! Cheers" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUE-JJ-C9Y">
+                        <rect key="frame" x="23" y="52" width="284" height="47"/>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="13"/>
+                        <color key="textColor" red="0.26274999999999998" green="0.26274999999999998" blue="0.26274999999999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOi-JT-rer">
+                        <rect key="frame" x="23" y="115" width="50" height="29"/>
+                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
+                        <state key="normal" title="Edit gift">
+                            <color key="titleColor" red="0.98038999999999998" green="0.24314" blue="0.24706" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="editButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="M9q-hj-eCf"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LOi-JT-rer" firstAttribute="top" secondItem="dUE-JJ-C9Y" secondAttribute="bottom" constant="16" id="3F6-lV-dfv"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="UKL-ng-A9B" secondAttribute="trailing" constant="7" id="JIb-vV-lfn"/>
+                    <constraint firstItem="dUE-JJ-C9Y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="K6P-0u-6b2"/>
+                    <constraint firstAttribute="bottom" secondItem="LOi-JT-rer" secondAttribute="bottom" constant="9.5" id="Nsd-yR-1VO"/>
+                    <constraint firstItem="LOi-JT-rer" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="QOM-UU-6If"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="dUE-JJ-C9Y" secondAttribute="trailing" constant="7" id="Qa1-Zh-Wpf"/>
+                    <constraint firstItem="UKL-ng-A9B" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Srw-hg-UG4"/>
+                    <constraint firstItem="UKL-ng-A9B" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="Tuf-JD-qol"/>
+                    <constraint firstItem="dUE-JJ-C9Y" firstAttribute="top" secondItem="UKL-ng-A9B" secondAttribute="bottom" constant="16" id="mgf-6z-B2d"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lbMessage" destination="dUE-JJ-C9Y" id="Vz7-i9-sd8"/>
+                <outlet property="lbSenderName" destination="9WE-Up-Ye0" id="jNs-tK-iua"/>
+            </connections>
+            <point key="canvasLocation" x="30" y="107"/>
+        </tableViewCell>
+    </objects>
+</document>

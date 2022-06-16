@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Brandon_blk.otf">
+            <string>BrandonGrotesque-Black</string>
+        </array>
+        <array key="Lato-Black.ttf">
+            <string>Lato-Black</string>
+        </array>
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="240" id="65U-gq-mZ1" customClass="PowerUpRewardTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="65U-gq-mZ1" id="fKV-NS-aJP">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="239.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3FA-un-wPL">
+                        <rect key="frame" x="15" y="15" width="290" height="50"/>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.24313725489999999" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="ftc-Hj-rdq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="BrandonGrotesque-Black" family="Brandon Grotesque" pointSize="14"/>
+                        <state key="normal" title="BUY NOW">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="chooseButtonPressed:" destination="65U-gq-mZ1" eventType="touchUpInside" id="S7l-Cx-LU5"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RRR-gv-Fs9" userLabel="Container">
+                        <rect key="frame" x="15" y="80" width="290" height="106"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hUE-VA-wnW" userLabel="Cashback Container">
+                                <rect key="frame" x="0.0" y="8" width="290" height="45"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cashback-icon-big" translatesAutoresizingMaskIntoConstraints="NO" id="c1O-8H-c8A">
+                                        <rect key="frame" x="15" y="7.5" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="UzP-Sk-yL6"/>
+                                            <constraint firstAttribute="width" constant="30" id="gOo-2X-0dy"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10% Instant Cashback" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWw-1N-KGn">
+                                        <rect key="frame" x="53" y="14" width="138" height="17"/>
+                                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
+                                        <color key="textColor" red="0.35686274509999999" green="0.35686274509999999" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S$1.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKY-Mp-rWX">
+                                        <rect key="frame" x="231.5" y="14" width="43.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="14"/>
+                                        <color key="textColor" red="0.23136999999999999" green="0.57647000000000004" blue="0.85489999999999999" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="dKY-Mp-rWX" secondAttribute="trailing" constant="15" id="4Mg-y7-TWG"/>
+                                    <constraint firstItem="dKY-Mp-rWX" firstAttribute="centerY" secondItem="hUE-VA-wnW" secondAttribute="centerY" id="Nbz-8Y-f2B"/>
+                                    <constraint firstItem="OWw-1N-KGn" firstAttribute="centerY" secondItem="c1O-8H-c8A" secondAttribute="centerY" id="S2U-vV-CQ4"/>
+                                    <constraint firstItem="OWw-1N-KGn" firstAttribute="leading" secondItem="c1O-8H-c8A" secondAttribute="trailing" constant="8" id="Ymx-LP-xp3"/>
+                                    <constraint firstAttribute="height" constant="45" id="tEu-bR-Viy"/>
+                                    <constraint firstItem="c1O-8H-c8A" firstAttribute="leading" secondItem="hUE-VA-wnW" secondAttribute="leading" constant="15" id="xL3-Wb-rsU"/>
+                                    <constraint firstItem="c1O-8H-c8A" firstAttribute="centerY" secondItem="hUE-VA-wnW" secondAttribute="centerY" id="zTs-NB-sfg"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="URG-gY-CND" userLabel="Ticket Container">
+                                <rect key="frame" x="0.0" y="53" width="290" height="45"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-jackpot-ticket" translatesAutoresizingMaskIntoConstraints="NO" id="exg-k0-Mn0">
+                                        <rect key="frame" x="15" y="7.5" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="3eY-y8-S9P"/>
+                                            <constraint firstAttribute="width" constant="30" id="GmI-X0-xfP"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Free Jackpot Tickets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jH-Jz-6pM">
+                                        <rect key="frame" x="53" y="14" width="128" height="17"/>
+                                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
+                                        <color key="textColor" red="0.35686274509999999" green="0.35686274509999999" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3c2-oB-icC">
+                                        <rect key="frame" x="258.5" y="14" width="16.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="14"/>
+                                        <color key="textColor" red="0.35686274509999999" green="0.35686274509999999" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="3c2-oB-icC" secondAttribute="trailing" constant="15" id="D9L-wg-Wri"/>
+                                    <constraint firstItem="8jH-Jz-6pM" firstAttribute="centerY" secondItem="exg-k0-Mn0" secondAttribute="centerY" id="P2S-As-3X1"/>
+                                    <constraint firstItem="8jH-Jz-6pM" firstAttribute="leading" secondItem="exg-k0-Mn0" secondAttribute="trailing" constant="8" id="UZv-cU-Cy3"/>
+                                    <constraint firstItem="exg-k0-Mn0" firstAttribute="leading" secondItem="URG-gY-CND" secondAttribute="leading" constant="15" id="eyK-sz-Zu1"/>
+                                    <constraint firstItem="exg-k0-Mn0" firstAttribute="centerY" secondItem="URG-gY-CND" secondAttribute="centerY" id="h3m-Y9-z8s"/>
+                                    <constraint firstAttribute="height" constant="45" id="w28-CH-eRn"/>
+                                    <constraint firstItem="3c2-oB-icC" firstAttribute="centerY" secondItem="URG-gY-CND" secondAttribute="centerY" id="yJm-HD-sko"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hUE-VA-wnW" secondAttribute="trailing" id="8S6-qr-W6e"/>
+                            <constraint firstItem="hUE-VA-wnW" firstAttribute="leading" secondItem="RRR-gv-Fs9" secondAttribute="leading" id="BWO-oP-Vvd"/>
+                            <constraint firstItem="hUE-VA-wnW" firstAttribute="top" secondItem="RRR-gv-Fs9" secondAttribute="top" constant="8" id="GbL-VH-ATO"/>
+                            <constraint firstAttribute="bottom" secondItem="URG-gY-CND" secondAttribute="bottom" constant="8" id="M5d-Lv-Fjr"/>
+                            <constraint firstAttribute="trailing" secondItem="URG-gY-CND" secondAttribute="trailing" id="SlB-Ou-H6T"/>
+                            <constraint firstItem="URG-gY-CND" firstAttribute="leading" secondItem="RRR-gv-Fs9" secondAttribute="leading" id="WDl-Ge-NBl"/>
+                            <constraint firstItem="URG-gY-CND" firstAttribute="top" secondItem="hUE-VA-wnW" secondAttribute="bottom" id="fCF-q7-o9d"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn more about your rewards" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wab-Wg-5Wf" customClass="MDHTMLLabel">
+                        <rect key="frame" x="15" y="201" width="290" height="14.5"/>
+                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="12"/>
+                        <color key="textColor" red="0.54054999999999997" green="0.54054999999999997" blue="0.54054999999999997" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="RRR-gv-Fs9" firstAttribute="top" secondItem="3FA-un-wPL" secondAttribute="bottom" constant="15" id="B0l-Qz-EcA"/>
+                    <constraint firstItem="wab-Wg-5Wf" firstAttribute="top" secondItem="RRR-gv-Fs9" secondAttribute="bottom" constant="15" id="JIE-4X-6la"/>
+                    <constraint firstItem="3FA-un-wPL" firstAttribute="top" secondItem="fKV-NS-aJP" secondAttribute="top" constant="15" id="QSp-wU-usA"/>
+                    <constraint firstItem="RRR-gv-Fs9" firstAttribute="leading" secondItem="fKV-NS-aJP" secondAttribute="leading" constant="15" id="TQc-Tf-Qmk"/>
+                    <constraint firstAttribute="bottom" secondItem="wab-Wg-5Wf" secondAttribute="bottom" constant="24" id="Wg7-Mn-Rqg"/>
+                    <constraint firstAttribute="trailing" secondItem="wab-Wg-5Wf" secondAttribute="trailing" constant="15" id="enH-fe-aKA"/>
+                    <constraint firstAttribute="trailing" secondItem="RRR-gv-Fs9" secondAttribute="trailing" constant="15" id="fd2-BL-CaK"/>
+                    <constraint firstItem="wab-Wg-5Wf" firstAttribute="leading" secondItem="fKV-NS-aJP" secondAttribute="leading" constant="15" id="i93-Kc-ZOh"/>
+                    <constraint firstItem="3FA-un-wPL" firstAttribute="leading" secondItem="fKV-NS-aJP" secondAttribute="leading" constant="15" id="orn-mo-XoO"/>
+                    <constraint firstAttribute="trailing" secondItem="3FA-un-wPL" secondAttribute="trailing" constant="15" id="utD-hj-YIw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnChoose" destination="3FA-un-wPL" id="S8l-6g-6Yq"/>
+                <outlet property="cashbackViewHeightAnchor" destination="tEu-bR-Viy" id="3VV-GC-wjr"/>
+                <outlet property="container" destination="RRR-gv-Fs9" id="Tua-lI-TdE"/>
+                <outlet property="lbBody" destination="wab-Wg-5Wf" id="Ckr-vL-dcj"/>
+                <outlet property="lbCashback" destination="dKY-Mp-rWX" id="Rqg-Ke-Y2p"/>
+                <outlet property="lbPercentage" destination="OWw-1N-KGn" id="rmL-Cv-pdS"/>
+                <outlet property="lbTicketCount" destination="3c2-oB-icC" id="yFo-sC-Cg2"/>
+            </connections>
+            <point key="canvasLocation" x="48" y="129"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cashback-icon-big" width="30" height="30"/>
+        <image name="icon-jackpot-ticket" width="30" height="30"/>
+    </resources>
+</document>

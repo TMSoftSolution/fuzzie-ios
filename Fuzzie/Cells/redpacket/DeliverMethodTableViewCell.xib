@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="73" id="KGk-i7-Jjw" customClass="DeliverMethodTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="share_whatsapp" translatesAutoresizingMaskIntoConstraints="NO" id="ktQ-DC-V9h">
+                        <rect key="frame" x="15" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="U4u-f5-iJu"/>
+                            <constraint firstAttribute="width" constant="40" id="Z4n-Pg-bf3"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WhatsApp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apw-6a-0Oh">
+                        <rect key="frame" x="70" y="22" width="61" height="16"/>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="13"/>
+                        <color key="textColor" red="0.25882352939999997" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-icon" translatesAutoresizingMaskIntoConstraints="NO" id="qtt-bb-0xh">
+                        <rect key="frame" x="296" y="22" width="9" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="NpE-a2-Zql"/>
+                            <constraint firstAttribute="width" constant="9" id="sOF-WK-YqX"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T5u-eG-lPh">
+                        <rect key="frame" x="15" y="58.5" width="305" height="1"/>
+                        <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="4sE-A2-LqF"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQ4-aY-EOu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="58.5"/>
+                        <connections>
+                            <action selector="deliveryButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="FoM-kA-E1K"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aQ4-aY-EOu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0O7-r4-aJC"/>
+                    <constraint firstItem="aQ4-aY-EOu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="23K-np-At1"/>
+                    <constraint firstItem="T5u-eG-lPh" firstAttribute="top" secondItem="aQ4-aY-EOu" secondAttribute="bottom" id="6Pc-Am-oFC"/>
+                    <constraint firstAttribute="trailing" secondItem="qtt-bb-0xh" secondAttribute="trailing" constant="15" id="F2H-Sc-mZZ"/>
+                    <constraint firstItem="aQ4-aY-EOu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="FyQ-rv-Wqq"/>
+                    <constraint firstItem="apw-6a-0Oh" firstAttribute="leading" secondItem="ktQ-DC-V9h" secondAttribute="trailing" constant="15" id="G2I-3P-8Mx"/>
+                    <constraint firstItem="ktQ-DC-V9h" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="L7b-7Q-AY8"/>
+                    <constraint firstItem="apw-6a-0Oh" firstAttribute="centerY" secondItem="ktQ-DC-V9h" secondAttribute="centerY" id="LzT-xt-YVO"/>
+                    <constraint firstItem="ktQ-DC-V9h" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="MIy-rW-xmb"/>
+                    <constraint firstItem="T5u-eG-lPh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Not-C7-E3S"/>
+                    <constraint firstAttribute="trailing" secondItem="T5u-eG-lPh" secondAttribute="trailing" id="Rza-ox-Ipc"/>
+                    <constraint firstItem="qtt-bb-0xh" firstAttribute="centerY" secondItem="apw-6a-0Oh" secondAttribute="centerY" id="W16-qj-rhH"/>
+                    <constraint firstAttribute="trailing" secondItem="aQ4-aY-EOu" secondAttribute="trailing" id="WWd-6R-NS8"/>
+                    <constraint firstAttribute="bottom" secondItem="T5u-eG-lPh" secondAttribute="bottom" id="eL2-rO-jyh"/>
+                    <constraint firstAttribute="trailing" secondItem="aQ4-aY-EOu" secondAttribute="trailing" id="f6Y-nt-b6r"/>
+                    <constraint firstAttribute="bottom" secondItem="ktQ-DC-V9h" secondAttribute="bottom" constant="9.5" id="nBg-fe-Gse"/>
+                    <constraint firstItem="aQ4-aY-EOu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="tKM-WH-5wo"/>
+                    <constraint firstItem="ktQ-DC-V9h" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="yEE-u4-ZTO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="ivIcon" destination="ktQ-DC-V9h" id="GMw-Ai-t52"/>
+                <outlet property="lbName" destination="apw-6a-0Oh" id="Wrx-s9-Vpv"/>
+            </connections>
+            <point key="canvasLocation" x="26" y="50.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow-icon" width="20" height="36"/>
+        <image name="share_whatsapp" width="40" height="40"/>
+    </resources>
+</document>

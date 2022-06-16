@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Brandon_blk.otf">
+            <string>BrandonGrotesque-Black</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="411" id="KGk-i7-Jjw" customClass="HomeJackpotTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="417"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="416.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jackpot-logo" translatesAutoresizingMaskIntoConstraints="NO" id="HPY-He-C3P">
+                        <rect key="frame" x="15" y="32" width="290" height="147.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="HPY-He-C3P" secondAttribute="height" multiplier="290:148" id="tjw-8H-A1l"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-jackpot-home" translatesAutoresizingMaskIntoConstraints="NO" id="Agr-YB-adX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="431.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Agr-YB-adX" secondAttribute="height" multiplier="20:27" id="v2X-aB-JnO"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35I-eI-c7k">
+                        <rect key="frame" x="15" y="200" width="290" height="38"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Win  S$150,000 every Satuarday, 6.30pm!">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="13" name="Lato-Black"/>
+                                    <real key="NSKern" value="0.0"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="19" maximumLineHeight="19" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content=" ">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="13" name="Lato-Bold"/>
+                                    <real key="NSKern" value="0.0"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="19" maximumLineHeight="19" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="Enter now to get your free Jackpot tickets.">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="13" name="Lato-Regular"/>
+                                    <real key="NSKern" value="0.0"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="19" maximumLineHeight="19" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGO-up-Ven">
+                        <rect key="frame" x="15" y="258" width="290" height="40"/>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.24313725490196078" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="WWY-51-Cv3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="BrandonGrotesque-Black" family="Brandon Grotesque" pointSize="13"/>
+                        <state key="normal" title="ENTER THE FUZZIE JACKPOT">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="enterButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Nhi-sP-SX8"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUh-S8-v1T">
+                        <rect key="frame" x="15" y="306" width="290" height="40"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="1YI-76-UfR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="BrandonGrotesque-Black" family="Brandon Grotesque" pointSize="13"/>
+                        <state key="normal" title="VIEW ALL DRAWS">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="viewAllButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Kkb-G0-7WB"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wR5-3g-nTG">
+                        <rect key="frame" x="15" y="362" width="290" height="22"/>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="18"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8q-Iq-voB">
+                        <rect key="frame" x="15" y="388" width="290" height="11"/>
+                        <attributedString key="attributedText">
+                            <fragment content="TIME LEFT TILL NEXT DRAW ">
+                                <attributes>
+                                    <color key="NSColor" red="0.41176000000000001" green="0.41176000000000001" blue="0.41176000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="10" name="BrandonGrotesque-Medium"/>
+                                    <real key="NSKern" value="1"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="11" maximumLineHeight="11" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="922-wJ-VT8">
+                        <rect key="frame" x="45" y="190" width="230" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JACKPOT IS LIVE" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCG-es-ed4">
+                                <rect key="frame" x="49.5" y="11" width="147" height="27.5"/>
+                                <fontDescription key="fontDescription" name="BrandonGrotesque-Black" family="Brandon Grotesque" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYd-fT-vod">
+                                <rect key="frame" x="33.5" y="20.5" width="8" height="8"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="8" id="DBS-eh-Ifl"/>
+                                    <constraint firstAttribute="height" constant="8" id="wjg-WT-s9W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sul-60-sld">
+                                <rect key="frame" x="0.0" y="0.0" width="230" height="50"/>
+                                <connections>
+                                    <action selector="liveButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="TzJ-ow-eAV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Sul-60-sld" secondAttribute="trailing" id="4Qa-DJ-4gK"/>
+                            <constraint firstItem="MCG-es-ed4" firstAttribute="centerY" secondItem="922-wJ-VT8" secondAttribute="centerY" id="7cX-0Y-0JR"/>
+                            <constraint firstItem="MCG-es-ed4" firstAttribute="leading" secondItem="mYd-fT-vod" secondAttribute="trailing" constant="8" id="B37-Cl-SNj"/>
+                            <constraint firstItem="MCG-es-ed4" firstAttribute="centerX" secondItem="922-wJ-VT8" secondAttribute="centerX" constant="8" id="CCn-Ef-PqI"/>
+                            <constraint firstAttribute="height" constant="50" id="Khl-Fb-7HB"/>
+                            <constraint firstItem="mYd-fT-vod" firstAttribute="centerY" secondItem="MCG-es-ed4" secondAttribute="centerY" id="biS-MC-pfA"/>
+                            <constraint firstAttribute="bottom" secondItem="Sul-60-sld" secondAttribute="bottom" id="cwA-S1-N49"/>
+                            <constraint firstItem="Sul-60-sld" firstAttribute="leading" secondItem="922-wJ-VT8" secondAttribute="leading" id="rCz-yc-sHX"/>
+                            <constraint firstItem="Sul-60-sld" firstAttribute="top" secondItem="922-wJ-VT8" secondAttribute="top" id="vj7-ME-gXK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.16078431372549018" green="0.16078431372549018" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="L8q-Iq-voB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="0pw-F6-zxd"/>
+                    <constraint firstItem="Agr-YB-adX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="2LZ-YQ-lCR"/>
+                    <constraint firstItem="UUh-S8-v1T" firstAttribute="top" secondItem="nGO-up-Ven" secondAttribute="bottom" constant="8" id="4fN-zW-rxK"/>
+                    <constraint firstItem="wR5-3g-nTG" firstAttribute="top" secondItem="UUh-S8-v1T" secondAttribute="bottom" constant="16" id="722-Oz-vSD"/>
+                    <constraint firstItem="HPY-He-C3P" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="EwP-rI-OuA"/>
+                    <constraint firstItem="Agr-YB-adX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="JDY-Sh-wKt"/>
+                    <constraint firstItem="35I-eI-c7k" firstAttribute="top" secondItem="HPY-He-C3P" secondAttribute="bottom" constant="20" id="PjQ-B0-I9X"/>
+                    <constraint firstAttribute="trailing" secondItem="wR5-3g-nTG" secondAttribute="trailing" constant="15" id="Tzj-OO-4Ys"/>
+                    <constraint firstItem="HPY-He-C3P" firstAttribute="centerY" secondItem="Agr-YB-adX" secondAttribute="centerY" multiplier="140:285" id="Y5d-BE-ugh"/>
+                    <constraint firstAttribute="trailing" secondItem="UUh-S8-v1T" secondAttribute="trailing" constant="15" id="ZWX-73-hGe"/>
+                    <constraint firstItem="922-wJ-VT8" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="aqq-3i-58B"/>
+                    <constraint firstItem="922-wJ-VT8" firstAttribute="top" secondItem="HPY-He-C3P" secondAttribute="bottom" constant="10" id="cxv-L5-sRg"/>
+                    <constraint firstAttribute="trailing" secondItem="L8q-Iq-voB" secondAttribute="trailing" constant="15" id="dQv-cx-d8n"/>
+                    <constraint firstItem="922-wJ-VT8" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="23/32" id="ewD-SF-o93"/>
+                    <constraint firstItem="wR5-3g-nTG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="gg0-WE-d8a"/>
+                    <constraint firstItem="L8q-Iq-voB" firstAttribute="top" secondItem="wR5-3g-nTG" secondAttribute="bottom" constant="4" id="lcy-Dd-M3h"/>
+                    <constraint firstAttribute="trailing" secondItem="Agr-YB-adX" secondAttribute="trailing" id="mmQ-Ac-WjC"/>
+                    <constraint firstItem="UUh-S8-v1T" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="nhN-aP-ERx"/>
+                    <constraint firstAttribute="trailing" secondItem="nGO-up-Ven" secondAttribute="trailing" constant="15" id="nlQ-RH-CIX"/>
+                    <constraint firstItem="nGO-up-Ven" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="oZf-fd-1mN"/>
+                    <constraint firstAttribute="trailing" secondItem="HPY-He-C3P" secondAttribute="trailing" constant="15" id="pwJ-4c-bqo"/>
+                    <constraint firstAttribute="trailing" secondItem="35I-eI-c7k" secondAttribute="trailing" constant="15" id="r0H-Mz-dHE"/>
+                    <constraint firstItem="35I-eI-c7k" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="rlw-7g-aFz"/>
+                    <constraint firstItem="nGO-up-Ven" firstAttribute="top" secondItem="35I-eI-c7k" secondAttribute="bottom" constant="20" id="rx5-6D-zCt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnEnter" destination="nGO-up-Ven" id="ek0-m1-GIQ"/>
+                <outlet property="btnViewAll" destination="UUh-S8-v1T" id="3v0-0H-bsd"/>
+                <outlet property="lbBody" destination="35I-eI-c7k" id="LXp-Ut-bAY"/>
+                <outlet property="lbDrawTime" destination="wR5-3g-nTG" id="k13-5L-6Uv"/>
+                <outlet property="livePoint" destination="mYd-fT-vod" id="iN9-LT-qlB"/>
+                <outlet property="liveView" destination="922-wJ-VT8" id="J5T-WA-TnK"/>
+            </connections>
+            <point key="canvasLocation" x="-26" y="257.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bg-jackpot-home" width="320" height="432"/>
+        <image name="jackpot-logo" width="320" height="163"/>
+    </resources>
+</document>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="205" id="KGk-i7-Jjw" customClass="ClubFlashTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="331" height="205"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="331" height="204.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brand-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="XBZ-gj-Tji">
+                        <rect key="frame" x="25" y="10" width="281" height="194.5"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-clock-white" translatesAutoresizingMaskIntoConstraints="NO" id="0T3-rj-zCF">
+                        <rect key="frame" x="40" y="25" width="11" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="11" id="PUs-Tc-CgX"/>
+                            <constraint firstAttribute="width" constant="11" id="nJI-7r-JWS"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End in 20 days" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7M-OL-u60">
+                        <rect key="frame" x="56" y="24" width="70" height="13.5"/>
+                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="11"/>
+                        <color key="textColor" red="1" green="0.99997999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sub-category-white-96-1" translatesAutoresizingMaskIntoConstraints="NO" id="9Jp-ho-c2I">
+                        <rect key="frame" x="40" y="174.5" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="4ZK-Ty-wqT"/>
+                            <constraint firstAttribute="height" constant="15" id="mrS-c8-XUa"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tanuki Raw" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2Z-px-nFI">
+                        <rect key="frame" x="60" y="175.5" width="55" height="13.5"/>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="11"/>
+                        <color key="textColor" red="1" green="0.99997999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="F2Z-px-nFI" firstAttribute="centerY" secondItem="9Jp-ho-c2I" secondAttribute="centerY" id="75q-lz-zQF"/>
+                    <constraint firstItem="XBZ-gj-Tji" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="B9a-3H-T6g"/>
+                    <constraint firstItem="0T3-rj-zCF" firstAttribute="top" secondItem="XBZ-gj-Tji" secondAttribute="top" constant="15" id="C2h-RR-oXa"/>
+                    <constraint firstItem="k7M-OL-u60" firstAttribute="leading" secondItem="0T3-rj-zCF" secondAttribute="trailing" constant="5" id="HOf-JR-0ZK"/>
+                    <constraint firstItem="k7M-OL-u60" firstAttribute="centerY" secondItem="0T3-rj-zCF" secondAttribute="centerY" id="KAa-Dh-TX3"/>
+                    <constraint firstAttribute="trailing" secondItem="XBZ-gj-Tji" secondAttribute="trailing" constant="25" id="T0m-vc-Y6T"/>
+                    <constraint firstAttribute="bottom" secondItem="XBZ-gj-Tji" secondAttribute="bottom" id="cDN-8z-05g"/>
+                    <constraint firstItem="0T3-rj-zCF" firstAttribute="leading" secondItem="XBZ-gj-Tji" secondAttribute="leading" constant="15" id="ccF-ZT-BuF"/>
+                    <constraint firstItem="F2Z-px-nFI" firstAttribute="leading" secondItem="9Jp-ho-c2I" secondAttribute="trailing" constant="5" id="flu-AR-ZmG"/>
+                    <constraint firstItem="9Jp-ho-c2I" firstAttribute="bottom" secondItem="XBZ-gj-Tji" secondAttribute="bottom" constant="-15" id="i25-C3-UVX"/>
+                    <constraint firstItem="XBZ-gj-Tji" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="qhQ-lt-fga"/>
+                    <constraint firstItem="9Jp-ho-c2I" firstAttribute="leading" secondItem="XBZ-gj-Tji" secondAttribute="leading" constant="15" id="xsj-sx-sBc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="ivCategory" destination="9Jp-ho-c2I" id="op3-RJ-Iy4"/>
+                <outlet property="ivFlash" destination="XBZ-gj-Tji" id="KTa-OW-C9J"/>
+                <outlet property="lbCategory" destination="F2Z-px-nFI" id="b0J-fY-HWb"/>
+            </connections>
+            <point key="canvasLocation" x="31.5" y="132.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="brand-placeholder" width="640" height="480"/>
+        <image name="icon-clock-white" width="11" height="11"/>
+        <image name="sub-category-white-96-1" width="27" height="27"/>
+    </resources>
+</document>

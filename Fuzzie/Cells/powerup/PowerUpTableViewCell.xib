@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Brandon_blk.otf">
+            <string>BrandonGrotesque-Black</string>
+        </array>
+        <array key="Lato-Black.ttf">
+            <string>Lato-Black</string>
+        </array>
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="129" id="KGk-i7-Jjw" customClass="PowerUpTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="124.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f8C-gn-h2p" customClass="TKRoundedView">
+                        <rect key="frame" x="15" y="0.0" width="290" height="114.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-power-up-pack" translatesAutoresizingMaskIntoConstraints="NO" id="4f5-nw-zLO">
+                                <rect key="frame" x="15" y="30" width="51" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="dfj-TO-FhP"/>
+                                    <constraint firstAttribute="width" constant="51" id="zxi-iD-uMM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="900" text="S$88" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKW-rA-VE0">
+                                <rect key="frame" x="236" y="47.5" width="39" height="20"/>
+                                <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3vL-Z9-gKq">
+                                <rect key="frame" x="86" y="21" width="146.5" height="72.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S POWER UP PACK" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HpE-I7-Oli">
+                                        <rect key="frame" x="0.0" y="0.0" width="146.5" height="24.5"/>
+                                        <fontDescription key="fontDescription" name="BrandonGrotesque-Black" family="Brandon Grotesque" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1x Power Up Cards" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jMP-Vw-V3x">
+                                        <rect key="frame" x="0.0" y="32.5" width="111" height="16"/>
+                                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="13"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.62" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6x Free Jackpot Tickets" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0d-U4-6PA">
+                                        <rect key="frame" x="0.0" y="56.5" width="136" height="16"/>
+                                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="13"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.62" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="jMP-Vw-V3x" firstAttribute="top" secondItem="HpE-I7-Oli" secondAttribute="bottom" constant="8" id="0By-SZ-wc0"/>
+                                    <constraint firstItem="X0d-U4-6PA" firstAttribute="leading" secondItem="3vL-Z9-gKq" secondAttribute="leading" id="2z6-6G-Phq"/>
+                                    <constraint firstAttribute="trailing" secondItem="HpE-I7-Oli" secondAttribute="trailing" id="XR4-sb-W5T"/>
+                                    <constraint firstItem="jMP-Vw-V3x" firstAttribute="leading" secondItem="3vL-Z9-gKq" secondAttribute="leading" id="fD8-lc-cI9"/>
+                                    <constraint firstAttribute="bottom" secondItem="X0d-U4-6PA" secondAttribute="bottom" id="lSh-OU-ZoE"/>
+                                    <constraint firstItem="HpE-I7-Oli" firstAttribute="leading" secondItem="3vL-Z9-gKq" secondAttribute="leading" id="oT4-K2-NRp"/>
+                                    <constraint firstItem="X0d-U4-6PA" firstAttribute="top" secondItem="jMP-Vw-V3x" secondAttribute="bottom" constant="8" id="q70-ew-xfM"/>
+                                    <constraint firstItem="HpE-I7-Oli" firstAttribute="top" secondItem="3vL-Z9-gKq" secondAttribute="top" id="wa4-en-lwY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23137254900000001" green="0.57647058819999997" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="IKW-rA-VE0" secondAttribute="trailing" constant="15" id="1gm-D9-oha"/>
+                            <constraint firstItem="4f5-nw-zLO" firstAttribute="centerY" secondItem="f8C-gn-h2p" secondAttribute="centerY" constant="8" id="MmL-HQ-Sv4"/>
+                            <constraint firstItem="3vL-Z9-gKq" firstAttribute="top" secondItem="f8C-gn-h2p" secondAttribute="top" constant="21" id="Ozi-LB-rnk"/>
+                            <constraint firstItem="IKW-rA-VE0" firstAttribute="centerY" secondItem="f8C-gn-h2p" secondAttribute="centerY" id="UGJ-ug-kpT"/>
+                            <constraint firstItem="3vL-Z9-gKq" firstAttribute="leading" secondItem="4f5-nw-zLO" secondAttribute="trailing" constant="20" id="V3C-6W-uuk"/>
+                            <constraint firstItem="4f5-nw-zLO" firstAttribute="leading" secondItem="f8C-gn-h2p" secondAttribute="leading" constant="15" id="emE-xf-JwL"/>
+                            <constraint firstItem="IKW-rA-VE0" firstAttribute="leading" secondItem="3vL-Z9-gKq" secondAttribute="trailing" constant="3.5" id="lii-D6-DVj"/>
+                            <constraint firstAttribute="bottom" secondItem="3vL-Z9-gKq" secondAttribute="bottom" constant="21" id="p18-ol-TVh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="f8C-gn-h2p" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Tc6-3w-psk"/>
+                    <constraint firstAttribute="trailing" secondItem="f8C-gn-h2p" secondAttribute="trailing" constant="15" id="dMp-Xk-Bpg"/>
+                    <constraint firstItem="f8C-gn-h2p" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="gnO-IL-2yQ"/>
+                    <constraint firstAttribute="bottom" secondItem="f8C-gn-h2p" secondAttribute="bottom" constant="10" id="yl2-3l-LIX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="container" destination="f8C-gn-h2p" id="7AS-gq-p2V"/>
+                <outlet property="lbCard" destination="jMP-Vw-V3x" id="rXA-1e-EjC"/>
+                <outlet property="lbName" destination="HpE-I7-Oli" id="Bee-P3-sNH"/>
+                <outlet property="lbPrice" destination="IKW-rA-VE0" id="P2F-V8-yHh"/>
+                <outlet property="lbTicket" destination="X0d-U4-6PA" id="cRj-Yz-tYP"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="94"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon-power-up-pack" width="167" height="186"/>
+    </resources>
+</document>

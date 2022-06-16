@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Brandon_blk.otf">
+            <string>BrandonGrotesque-Black</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCell" id="MGU-V6-Wy3" customClass="CategoryCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rco-mM-G8H">
+                        <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iXJ-db-ez0">
+                        <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20469798659999999" colorSpace="calibratedRGB"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EAT AND DRINK" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90A-k3-Ji2">
+                        <rect key="frame" x="15" y="42" width="110" height="56.5"/>
+                        <fontDescription key="fontDescription" name="BrandonGrotesque-Black" family="Brandon Grotesque" pointSize="19"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <color key="shadowColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                        <size key="shadowOffset" width="0.0" height="2"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Rco-mM-G8H" firstAttribute="top" secondItem="MGU-V6-Wy3" secondAttribute="top" id="AoR-9J-SzW"/>
+                <constraint firstAttribute="bottom" secondItem="iXJ-db-ez0" secondAttribute="bottom" id="BMx-0c-s6e"/>
+                <constraint firstItem="90A-k3-Ji2" firstAttribute="leading" secondItem="MGU-V6-Wy3" secondAttribute="leading" constant="15" id="GVe-rQ-drS"/>
+                <constraint firstItem="Rco-mM-G8H" firstAttribute="leading" secondItem="MGU-V6-Wy3" secondAttribute="leading" id="P7e-TP-Q0E"/>
+                <constraint firstAttribute="trailing" secondItem="Rco-mM-G8H" secondAttribute="trailing" id="bVq-49-EjV"/>
+                <constraint firstItem="iXJ-db-ez0" firstAttribute="top" secondItem="MGU-V6-Wy3" secondAttribute="top" id="cTX-CX-sZF"/>
+                <constraint firstItem="iXJ-db-ez0" firstAttribute="leading" secondItem="MGU-V6-Wy3" secondAttribute="leading" id="dwH-y8-9yB"/>
+                <constraint firstAttribute="bottom" secondItem="Rco-mM-G8H" secondAttribute="bottom" id="e9d-fx-rsE"/>
+                <constraint firstAttribute="trailing" secondItem="iXJ-db-ez0" secondAttribute="trailing" id="s6m-2x-VYT"/>
+                <constraint firstAttribute="trailing" secondItem="90A-k3-Ji2" secondAttribute="trailing" constant="15" id="ysi-ti-RR6"/>
+                <constraint firstItem="90A-k3-Ji2" firstAttribute="centerY" secondItem="MGU-V6-Wy3" secondAttribute="centerY" id="zBo-hv-aMJ"/>
+            </constraints>
+            <size key="customSize" width="140" height="140"/>
+            <connections>
+                <outlet property="gradientView" destination="iXJ-db-ez0" id="Vcf-sz-lwO"/>
+                <outlet property="imageView" destination="Rco-mM-G8H" id="WNr-5n-Zzg"/>
+                <outlet property="titleLabel" destination="90A-k3-Ji2" id="OQB-AS-zgx"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

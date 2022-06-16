@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="139" id="4y4-4L-eLo" customClass="GiftBoxPowerUpCardTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="139"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4y4-4L-eLo" id="nwM-qo-oBE">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="138.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image-power-up-card" translatesAutoresizingMaskIntoConstraints="NO" id="P6S-v7-Oa1">
+                        <rect key="frame" x="15" y="24.5" width="120" height="90"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="90" id="UuV-Jc-cTl"/>
+                            <constraint firstAttribute="width" constant="120" id="fgk-Fq-Ik9"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24h Power up card" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BXY-N8-IfF">
+                        <rect key="frame" x="145" y="61" width="215" height="17"/>
+                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
+                        <color key="textColor" red="0.25882352939999997" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k9u-BL-GX7" userLabel="separator">
+                        <rect key="frame" x="0.0" y="137.5" width="375" height="1"/>
+                        <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="n2m-by-m5q"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-new" translatesAutoresizingMaskIntoConstraints="NO" id="1CE-x5-5pe">
+                        <rect key="frame" x="95" y="24.5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="8vh-gI-dv0"/>
+                            <constraint firstAttribute="height" constant="40" id="faM-Dt-8gf"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="BXY-N8-IfF" firstAttribute="leading" secondItem="P6S-v7-Oa1" secondAttribute="trailing" constant="10" id="2FD-SE-4A7"/>
+                    <constraint firstItem="1CE-x5-5pe" firstAttribute="trailing" secondItem="P6S-v7-Oa1" secondAttribute="trailing" id="3X7-iT-UQv"/>
+                    <constraint firstAttribute="trailing" secondItem="k9u-BL-GX7" secondAttribute="trailing" id="4NM-pb-Im7"/>
+                    <constraint firstItem="1CE-x5-5pe" firstAttribute="top" secondItem="P6S-v7-Oa1" secondAttribute="top" id="6be-tu-Aua"/>
+                    <constraint firstAttribute="trailing" secondItem="BXY-N8-IfF" secondAttribute="trailing" constant="15" id="GCz-IE-5Gc"/>
+                    <constraint firstItem="P6S-v7-Oa1" firstAttribute="leading" secondItem="nwM-qo-oBE" secondAttribute="leading" constant="15" id="HpW-ir-p3Y"/>
+                    <constraint firstItem="BXY-N8-IfF" firstAttribute="centerY" secondItem="P6S-v7-Oa1" secondAttribute="centerY" id="NmR-oc-bMM"/>
+                    <constraint firstItem="P6S-v7-Oa1" firstAttribute="centerY" secondItem="nwM-qo-oBE" secondAttribute="centerY" id="fPE-Kj-byc"/>
+                    <constraint firstAttribute="bottom" secondItem="k9u-BL-GX7" secondAttribute="bottom" id="mG9-VR-aa2"/>
+                    <constraint firstItem="k9u-BL-GX7" firstAttribute="leading" secondItem="nwM-qo-oBE" secondAttribute="leading" id="zsg-hA-9oU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ivNew" destination="1CE-x5-5pe" id="5hI-JQ-yhK"/>
+                <outlet property="lbName" destination="BXY-N8-IfF" id="Eut-KB-CKt"/>
+            </connections>
+            <point key="canvasLocation" x="43.5" y="-115.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon-new" width="41" height="41"/>
+        <image name="image-power-up-card" width="120" height="90"/>
+    </resources>
+</document>

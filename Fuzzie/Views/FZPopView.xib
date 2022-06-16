@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Brandon_blk.otf">
+            <string>BrandonGrotesque-Black</string>
+        </array>
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="JdN-vy-b2N" customClass="FZPopView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8sd-Eu-vdw">
+                    <rect key="frame" x="67" y="193" width="240" height="280"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="280" id="4Vl-SI-9EY"/>
+                        <constraint firstAttribute="width" constant="240" id="ESi-tM-GQk"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROCESSING" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jof-WJ-GgD">
+                    <rect key="frame" x="137" y="223" width="99.5" height="23"/>
+                    <fontDescription key="fontDescription" name="BrandonGrotesque-Black" family="Brandon Grotesque" pointSize="16"/>
+                    <color key="textColor" red="0.98039215690000003" green="0.24313725489999999" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FCj-0y-ZLJ" customClass="FLAnimatedImageView">
+                    <rect key="frame" x="239" y="231" width="20" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="1XD-D5-7T6"/>
+                        <constraint firstAttribute="height" constant="15" id="yXt-WY-qZo"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bear-dead" translatesAutoresizingMaskIntoConstraints="NO" id="Omo-YK-4EZ">
+                    <rect key="frame" x="142" y="266" width="90" height="90"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="3f8-bH-n7m"/>
+                        <constraint firstAttribute="width" constant="90" id="wQk-7t-RIB"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email or password is incorrect. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJT-Xd-YQu" userLabel="Email or password is incorrect.">
+                    <rect key="frame" x="87" y="364" width="200" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="6Y2-1z-ooN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOq-3Z-C4H" customClass="FZPopButton">
+                    <rect key="frame" x="67" y="432" width="240" height="50"/>
+                    <color key="backgroundColor" red="0.98039215690000003" green="0.24313725489999999" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="2jk-XN-Mjh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="BrandonGrotesque-Black" family="Brandon Grotesque" pointSize="17"/>
+                    <state key="normal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="okButtonPressed:" destination="JdN-vy-b2N" eventType="touchUpInside" id="tmC-C9-qmG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IfD-kG-w2P">
+                    <rect key="frame" x="92.5" y="552" width="190" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ndv-4Y-Ath"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="17"/>
+                    <state key="normal" title="Sign in with your account">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="signButtonPressed:" destination="JdN-vy-b2N" eventType="touchUpInside" id="azV-Ul-ZWv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6P-j9-QTg">
+                    <rect key="frame" x="148" y="607" width="79" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="sJs-a6-EYl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="17"/>
+                    <state key="normal" title="No, cancel">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelButtonClicked:" destination="JdN-vy-b2N" eventType="touchUpInside" id="fl0-Ou-pwf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Omo-YK-4EZ" firstAttribute="top" secondItem="jof-WJ-GgD" secondAttribute="bottom" constant="20" id="1zk-aG-qUi"/>
+                <constraint firstItem="Omo-YK-4EZ" firstAttribute="centerX" secondItem="8sd-Eu-vdw" secondAttribute="centerX" id="279-8h-Zei"/>
+                <constraint firstItem="8sd-Eu-vdw" firstAttribute="centerX" secondItem="JdN-vy-b2N" secondAttribute="centerX" id="EON-Ad-Aol"/>
+                <constraint firstItem="FJT-Xd-YQu" firstAttribute="trailing" secondItem="8sd-Eu-vdw" secondAttribute="trailing" constant="-20" id="Gax-0G-dXm"/>
+                <constraint firstItem="qOq-3Z-C4H" firstAttribute="top" secondItem="FJT-Xd-YQu" secondAttribute="bottom" constant="8" id="LsQ-u9-ZMC"/>
+                <constraint firstItem="e6P-j9-QTg" firstAttribute="centerX" secondItem="JdN-vy-b2N" secondAttribute="centerX" id="Oj7-D0-fRZ"/>
+                <constraint firstItem="jof-WJ-GgD" firstAttribute="top" secondItem="8sd-Eu-vdw" secondAttribute="top" constant="30" id="Po4-5r-Mt7"/>
+                <constraint firstItem="FCj-0y-ZLJ" firstAttribute="top" secondItem="jof-WJ-GgD" secondAttribute="top" constant="8" id="UFo-l6-qON"/>
+                <constraint firstItem="FJT-Xd-YQu" firstAttribute="top" secondItem="Omo-YK-4EZ" secondAttribute="bottom" constant="8" id="cKn-Bz-a8r"/>
+                <constraint firstItem="jof-WJ-GgD" firstAttribute="centerX" secondItem="JdN-vy-b2N" secondAttribute="centerX" id="cOf-I7-xUS"/>
+                <constraint firstItem="FJT-Xd-YQu" firstAttribute="leading" secondItem="8sd-Eu-vdw" secondAttribute="leading" constant="20" id="hjB-9e-0DO"/>
+                <constraint firstItem="IfD-kG-w2P" firstAttribute="centerX" secondItem="JdN-vy-b2N" secondAttribute="centerX" id="mG9-qV-erQ"/>
+                <constraint firstItem="FCj-0y-ZLJ" firstAttribute="leading" secondItem="jof-WJ-GgD" secondAttribute="trailing" constant="2.5" id="mK8-Ly-mKa"/>
+                <constraint firstItem="qOq-3Z-C4H" firstAttribute="centerX" secondItem="8sd-Eu-vdw" secondAttribute="centerX" id="oUE-lv-tT9"/>
+                <constraint firstItem="qOq-3Z-C4H" firstAttribute="width" secondItem="8sd-Eu-vdw" secondAttribute="width" id="pgF-4Z-lQQ"/>
+                <constraint firstAttribute="bottom" secondItem="IfD-kG-w2P" secondAttribute="bottom" constant="75" id="sdK-l7-KLw"/>
+                <constraint firstAttribute="bottom" secondItem="e6P-j9-QTg" secondAttribute="bottom" constant="20" id="vzf-DF-wUf"/>
+                <constraint firstItem="8sd-Eu-vdw" firstAttribute="centerY" secondItem="JdN-vy-b2N" secondAttribute="centerY" id="yFB-sO-dqq"/>
+            </constraints>
+            <connections>
+                <outlet property="bodyHeightAnchor" destination="6Y2-1z-ooN" id="v0j-Gg-U8l"/>
+                <outlet property="btnCancel" destination="e6P-j9-QTg" id="LXy-dk-qs4"/>
+                <outlet property="btnOk" destination="qOq-3Z-C4H" id="gzu-1r-aQW"/>
+                <outlet property="btnSign" destination="IfD-kG-w2P" id="Xgo-Ea-fNp"/>
+                <outlet property="buttonHeightAnchor" destination="2jk-XN-Mjh" id="0FL-Cb-LkB"/>
+                <outlet property="lbBody" destination="FJT-Xd-YQu" id="hnH-I3-U11"/>
+                <outlet property="lbTitle" destination="jof-WJ-GgD" id="y6f-Mw-F5m"/>
+                <outlet property="loader" destination="FCj-0y-ZLJ" id="g7p-dK-ehH"/>
+                <outlet property="maskView" destination="8sd-Eu-vdw" id="WGg-BP-Qto"/>
+                <outlet property="maskViewHeightAnchor" destination="4Vl-SI-9EY" id="kcv-mI-FMP"/>
+                <outlet property="stateImage" destination="Omo-YK-4EZ" id="b5Q-t2-th8"/>
+                <outlet property="stateImageCenterAnchor" destination="279-8h-Zei" id="8ZO-YF-kLw"/>
+                <outlet property="stateImageTopAnchor" destination="1zk-aG-qUi" id="zK1-Pr-Phf"/>
+                <outlet property="titleTopAnchor" destination="Po4-5r-Mt7" id="rdR-en-a4P"/>
+            </connections>
+            <point key="canvasLocation" x="937" y="240"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bear-dead" width="146" height="128"/>
+    </resources>
+</document>

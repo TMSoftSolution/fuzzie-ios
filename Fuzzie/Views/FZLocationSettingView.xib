@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Brandon_blk.otf">
+            <string>BrandonGrotesque-Black</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FZLocationSettingView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YyR-Oz-ihD">
+                    <rect key="frame" x="77.5" y="183.5" width="220" height="300"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TURN ON YOUR LOCATION" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iMc-Hy-eMI">
+                            <rect key="frame" x="24" y="24" width="172" height="46"/>
+                            <fontDescription key="fontDescription" name="BrandonGrotesque-Black" family="Brandon Grotesque" pointSize="16"/>
+                            <color key="textColor" red="0.98039215690000003" green="0.24313725489999999" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OA5-nS-tAM" customClass="FZPopButton">
+                            <rect key="frame" x="0.0" y="252" width="220" height="50"/>
+                            <color key="backgroundColor" red="0.98039215690000003" green="0.24313725489999999" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="Wz5-tB-ceW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="BrandonGrotesque-Black" family="Brandon Grotesque" pointSize="17"/>
+                            <state key="normal" title="GO TO SETTINGS">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="settingButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="RfJ-BT-swq"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-location-setting" translatesAutoresizingMaskIntoConstraints="NO" id="EnD-8o-6mk">
+                            <rect key="frame" x="86" y="86" width="47" height="64"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="47" id="3Vi-zI-axJ"/>
+                                <constraint firstAttribute="height" constant="64" id="iDl-qZ-mgf"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPA-pG-AU8">
+                            <rect key="frame" x="32" y="166" width="156" height="63"/>
+                            <attributedString key="attributedText">
+                                <fragment content="Please enable location services for Fuzzie on your phone settings.">
+                                    <attributes>
+                                        <color key="NSColor" red="0.26274999999999998" green="0.26274999999999998" blue="0.26274999999999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="13" name="Lato-Regular"/>
+                                        <real key="NSKern" value="0.0"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="21" maximumLineHeight="21" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="Bpt-mQ-dC0"/>
+                        <constraint firstItem="iMc-Hy-eMI" firstAttribute="leading" secondItem="YyR-Oz-ihD" secondAttribute="leading" constant="24" id="Ff5-zt-QH2"/>
+                        <constraint firstAttribute="width" constant="220" id="Gdf-nM-BCj"/>
+                        <constraint firstAttribute="trailing" secondItem="FPA-pG-AU8" secondAttribute="trailing" constant="32" id="SeU-h3-KKR"/>
+                        <constraint firstItem="FPA-pG-AU8" firstAttribute="leading" secondItem="YyR-Oz-ihD" secondAttribute="leading" constant="32" id="XEe-Vr-zFK"/>
+                        <constraint firstItem="EnD-8o-6mk" firstAttribute="centerX" secondItem="YyR-Oz-ihD" secondAttribute="centerX" id="ZBm-Z4-aPh"/>
+                        <constraint firstAttribute="bottom" secondItem="OA5-nS-tAM" secondAttribute="bottom" constant="-2" id="Zis-FH-bMK"/>
+                        <constraint firstAttribute="trailing" secondItem="iMc-Hy-eMI" secondAttribute="trailing" constant="24" id="btg-fp-6HS"/>
+                        <constraint firstItem="iMc-Hy-eMI" firstAttribute="top" secondItem="YyR-Oz-ihD" secondAttribute="top" constant="24" id="fwR-CU-qQZ"/>
+                        <constraint firstAttribute="trailing" secondItem="OA5-nS-tAM" secondAttribute="trailing" id="iiC-8M-2th"/>
+                        <constraint firstItem="OA5-nS-tAM" firstAttribute="leading" secondItem="YyR-Oz-ihD" secondAttribute="leading" id="jpP-pa-d7X"/>
+                        <constraint firstItem="EnD-8o-6mk" firstAttribute="top" secondItem="iMc-Hy-eMI" secondAttribute="bottom" constant="16" id="olT-2U-HDc"/>
+                        <constraint firstItem="FPA-pG-AU8" firstAttribute="top" secondItem="EnD-8o-6mk" secondAttribute="bottom" constant="16" id="xzD-cK-kzp"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bpT-XA-a8w">
+                    <rect key="frame" x="148.5" y="614" width="78" height="29"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="WiIl do later">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Lato-Bold"/>
+                                    <real key="NSKern" value="0.0"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="laterButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="uCt-ys-dxV"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bpT-XA-a8w" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="1Bf-L7-Kqc"/>
+                <constraint firstItem="YyR-Oz-ihD" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="nip-MP-mbc"/>
+                <constraint firstAttribute="bottom" secondItem="bpT-XA-a8w" secondAttribute="bottom" constant="24" id="qqb-Xt-d95"/>
+                <constraint firstItem="YyR-Oz-ihD" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="xpF-M0-Lrj"/>
+            </constraints>
+            <connections>
+                <outlet property="maskView" destination="YyR-Oz-ihD" id="xFP-us-amD"/>
+            </connections>
+            <point key="canvasLocation" x="26.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon-location-setting" width="47" height="64"/>
+    </resources>
+</document>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Brandon_bold.otf">
+            <string>BrandonGrotesque-Bold</string>
+        </array>
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="103" id="KGk-i7-Jjw" customClass="OrderHistoryTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="334" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="334" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-icon" translatesAutoresizingMaskIntoConstraints="NO" id="d65-Mv-eDS">
+                        <rect key="frame" x="303" y="42.5" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="1NQ-Ov-FZ6"/>
+                            <constraint firstAttribute="height" constant="15" id="dqt-1m-NQE"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order number: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPW-yR-TzU">
+                        <rect key="frame" x="16" y="44" width="68" height="12"/>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="10"/>
+                        <color key="textColor" red="0.67842999999999998" green="0.67842999999999998" blue="0.67842999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#827361" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Mn-Lt-bX6">
+                        <rect key="frame" x="84" y="44" width="39" height="12"/>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="10"/>
+                        <color key="textColor" red="0.67842999999999998" green="0.67842999999999998" blue="0.67842999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 January 2017, 7:15pm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tb-24-vfk">
+                        <rect key="frame" x="16" y="17" width="182.5" height="19"/>
+                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="16"/>
+                        <color key="textColor" red="0.25881999999999999" green="0.25881999999999999" blue="0.25881999999999999" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOTAL: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2G-9g-ggi">
+                        <rect key="frame" x="16" y="66" width="46.5" height="15.5"/>
+                        <fontDescription key="fontDescription" name="BrandonGrotesque-Bold" family="Brandon Grotesque" pointSize="13"/>
+                        <color key="textColor" red="0.98038999999999998" green="0.24314" blue="0.24706" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S$100" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BrF-ob-Bp2">
+                        <rect key="frame" x="62.5" y="66" width="37.5" height="15.5"/>
+                        <fontDescription key="fontDescription" name="BrandonGrotesque-Bold" family="Brandon Grotesque" pointSize="13"/>
+                        <color key="textColor" red="0.98038999999999998" green="0.24314" blue="0.24706" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cEj-xT-ukS">
+                        <rect key="frame" x="115.5" y="66" width="109" height="15.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CASHBACK: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLE-Ph-hPS">
+                                <rect key="frame" x="0.0" y="0.0" width="78.5" height="15.5"/>
+                                <fontDescription key="fontDescription" name="BrandonGrotesque-Bold" family="Brandon Grotesque" pointSize="13"/>
+                                <color key="textColor" red="0.23136999999999999" green="0.57647000000000004" blue="0.85489999999999999" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S$10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yoS-2E-Nk5">
+                                <rect key="frame" x="78.5" y="0.0" width="30.5" height="15.5"/>
+                                <fontDescription key="fontDescription" name="BrandonGrotesque-Bold" family="Brandon Grotesque" pointSize="13"/>
+                                <color key="textColor" red="0.23136999999999999" green="0.57647000000000004" blue="0.85489999999999999" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="yoS-2E-Nk5" firstAttribute="leading" secondItem="yLE-Ph-hPS" secondAttribute="trailing" id="8k3-Nl-3KO"/>
+                            <constraint firstAttribute="bottom" secondItem="yoS-2E-Nk5" secondAttribute="bottom" id="90h-gL-CuF"/>
+                            <constraint firstItem="yLE-Ph-hPS" firstAttribute="leading" secondItem="cEj-xT-ukS" secondAttribute="leading" id="B9T-rn-Bhs"/>
+                            <constraint firstAttribute="trailing" secondItem="yoS-2E-Nk5" secondAttribute="trailing" id="Cu2-6K-Gqi"/>
+                            <constraint firstItem="yLE-Ph-hPS" firstAttribute="top" secondItem="cEj-xT-ukS" secondAttribute="top" id="oc9-SK-cgY"/>
+                            <constraint firstItem="yoS-2E-Nk5" firstAttribute="top" secondItem="cEj-xT-ukS" secondAttribute="top" id="tfK-mW-fPx"/>
+                            <constraint firstItem="yoS-2E-Nk5" firstAttribute="leading" secondItem="yLE-Ph-hPS" secondAttribute="trailing" id="uJW-k0-0S2"/>
+                            <constraint firstAttribute="bottom" secondItem="yLE-Ph-hPS" secondAttribute="bottom" id="wf4-oA-yCQ"/>
+                        </constraints>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rMB-A1-0nz">
+                        <rect key="frame" x="16" y="98.5" width="318" height="1"/>
+                        <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="z9O-cP-NHV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cEj-xT-ukS" firstAttribute="leading" secondItem="BrF-ob-Bp2" secondAttribute="trailing" constant="15.5" id="4Xz-a6-tOl"/>
+                    <constraint firstItem="d65-Mv-eDS" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="5O8-Vv-CTd"/>
+                    <constraint firstItem="BrF-ob-Bp2" firstAttribute="centerY" secondItem="M2G-9g-ggi" secondAttribute="centerY" id="5ZS-YE-nnJ"/>
+                    <constraint firstItem="8Mn-Lt-bX6" firstAttribute="centerY" secondItem="jPW-yR-TzU" secondAttribute="centerY" id="9B4-3G-RHZ"/>
+                    <constraint firstAttribute="trailing" secondItem="d65-Mv-eDS" secondAttribute="trailing" constant="16" id="B08-sz-qSc"/>
+                    <constraint firstItem="jPW-yR-TzU" firstAttribute="top" secondItem="5tb-24-vfk" secondAttribute="bottom" constant="8" id="E2v-CA-8Dm"/>
+                    <constraint firstItem="M2G-9g-ggi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="MmC-Uu-LDN"/>
+                    <constraint firstItem="M2G-9g-ggi" firstAttribute="top" secondItem="jPW-yR-TzU" secondAttribute="bottom" constant="10" id="RRx-5v-uMH"/>
+                    <constraint firstItem="5tb-24-vfk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="T3m-ty-SS2"/>
+                    <constraint firstAttribute="bottom" secondItem="rMB-A1-0nz" secondAttribute="bottom" id="Uim-6k-I0g"/>
+                    <constraint firstItem="jPW-yR-TzU" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Wz2-eL-TMr"/>
+                    <constraint firstItem="BrF-ob-Bp2" firstAttribute="leading" secondItem="M2G-9g-ggi" secondAttribute="trailing" id="Y8Z-S2-WK9"/>
+                    <constraint firstAttribute="trailing" secondItem="rMB-A1-0nz" secondAttribute="trailing" id="ZMz-mF-P8U"/>
+                    <constraint firstItem="rMB-A1-0nz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="a3x-Mh-NER"/>
+                    <constraint firstItem="8Mn-Lt-bX6" firstAttribute="leading" secondItem="jPW-yR-TzU" secondAttribute="trailing" id="hKG-X7-PWh"/>
+                    <constraint firstItem="jPW-yR-TzU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="nGP-pK-6Yx"/>
+                    <constraint firstItem="cEj-xT-ukS" firstAttribute="centerY" secondItem="BrF-ob-Bp2" secondAttribute="centerY" id="nSR-5W-UlW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cashbackView" destination="cEj-xT-ukS" id="Ozt-tv-xxo"/>
+                <outlet property="lbCashback" destination="yoS-2E-Nk5" id="F1F-lu-fC2"/>
+                <outlet property="lbDate" destination="5tb-24-vfk" id="HaZ-cN-6hL"/>
+                <outlet property="lbOrderNumber" destination="8Mn-Lt-bX6" id="EfF-Bx-A6D"/>
+                <outlet property="lbTotalPrice" destination="BrF-ob-Bp2" id="lpc-gy-PO1"/>
+            </connections>
+            <point key="canvasLocation" x="32" y="81"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow-icon" width="20" height="36"/>
+    </resources>
+</document>
